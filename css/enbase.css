@@ -163,13 +163,11 @@ textarea {
 }
 .banner {
   position: relative;
-}
-.banner img {
-  width: 100%;
   height: 700px;
 }
 .banner .banner-txt {
-  width: 1300px;
+  width: 1419px;
+  height: 198px;
   margin: auto;
   font-size: 40px;
   color: #333;

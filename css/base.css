@@ -166,15 +166,17 @@ textarea {
   height: 700px;
 }
 .banner .banner-txt {
-  width: 1110px;
+  width: 900px;
   margin: auto;
-  font-size: 37px;
+  font-size: 30px;
   color: #333;
   position: absolute;
   font-weight: bold;
-  top: 376px;
+  top: 260px;
   left: 0;
   right: 0;
+  text-align: center;
+  line-height: 48px;
 }
 .content {
   margin: auto;
@@ -197,12 +199,14 @@ textarea {
   font-size: 36px;
   padding-top: 50px;
   padding-bottom: 30px;
+  font-weight: bold;
 }
 .content .content-header p {
-  font-size: 30px;
+  font-size: 28px;
 }
 .content .content-header p span {
   font-size: 36px;
+  font-weight: bold;
 }
 .content .content-con {
   padding-top: 270px;
