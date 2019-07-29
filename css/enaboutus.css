@@ -241,6 +241,7 @@ textarea {
 }
 .content .module3 .module3-con .module3-con-con .item .item-name p:first-child {
   font-size: 20px;
+  padding-bottom: 5px;
 }
 .content .module3 .module3-con .module3-con-con .item .item-text {
   margin-top: 10px;
@@ -261,6 +262,12 @@ textarea {
 .content .module3 .module3-con .module3-con-con .item:nth-child(6) {
   height: 500px;
 }
+.content .module3 .module3-con .module3-con-con .item:nth-child(2) p:nth-child(2),
+.content .module3 .module3-con .module3-con-con .item:nth-child(5) p:nth-child(2),
+.content .module3 .module3-con .module3-con-con .item:nth-child(2) p:nth-child(3),
+.content .module3 .module3-con .module3-con-con .item:nth-child(5) p:nth-child(3) {
+  line-height: 20px;
+}
 .content .module3 .module3-con .module3-con-con .item:nth-child(2) .item-text,
 .content .module3 .module3-con .module3-con-con .item:nth-child(5) .item-text {
   margin-top: 17px;
@@ -268,6 +275,10 @@ textarea {
 .content .module3 .module3-con .module3-con-con .item:nth-child(2) .item-text ul li,
 .content .module3 .module3-con .module3-con-con .item:nth-child(5) .item-text ul li {
   line-height: 23px;
+}
+.content .module3 .module3-con .module3-con-con .item:nth-child(2) p:nth-child(2),
+.content .module3 .module3-con .module3-con-con .item:nth-child(5) p:nth-child(2) {
+  margin-top: 5px;
 }
 .content .module3 .module3-con .module3-con-con .item:nth-child(3) .item-text,
 .content .module3 .module3-con .module3-con-con .item:nth-child(4) .item-text,

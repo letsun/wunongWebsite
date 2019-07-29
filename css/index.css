@@ -277,6 +277,7 @@ textarea {
   font-size: 25px;
   color: #ff8b04;
   line-height: 35px;
+  letter-spacing: 10px;
 }
 .con .con-xpsf .con-xpsf-nav {
   margin: 70px 0 30px 0;
@@ -342,6 +343,7 @@ textarea {
   font-size: 25px;
   color: #ff8b04;
   line-height: 35px;
+  letter-spacing: 10px;
 }
 .con .con-yjsh .con-yjsh-nav {
   margin: 70px 0 30px 0;
@@ -405,6 +407,7 @@ textarea {
   font-size: 25px;
   color: #ff8b04;
   line-height: 35px;
+  letter-spacing: 10px;
 }
 .footer {
   margin-top: 90px;
@@ -432,6 +435,10 @@ textarea {
 }
 .footer .footer-con .footer-con-lxwm .footer-con-lxwm-con .footer-con-lxwm-con-right {
   width: 280px;
+}
+.footer .footer-con .footer-con-lxwm .footer-con-lxwm-con:last-child {
+  line-height: 25px;
+  padding-top: 5px;
 }
 .footer .footer-con .footer-con-gzh {
   width: 39%;

@@ -243,6 +243,10 @@ textarea {
 .footer .footer-con .footer-con-lxwm .footer-con-lxwm-con .footer-con-lxwm-con-right {
   width: 280px;
 }
+.footer .footer-con .footer-con-lxwm .footer-con-lxwm-con:last-child {
+  line-height: 25px;
+  padding-top: 5px;
+}
 .footer .footer-con .footer-con-gzh {
   width: 39%;
 }
