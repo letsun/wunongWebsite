@@ -107,25 +107,29 @@ textarea {
 }
 .header .header-con .header-logo {
   width: 20%;
+  float: left;
   padding-top: 37px;
 }
 .header .header-con .header-logo p {
   font-size: 17px;
+  padding-left: 10px;
 }
 .header .header-con .header-nav {
-  width: 80%;
+  width: 65%;
   display: flex;
   padding-top: 62px;
   font-size: 16px;
+  float: left;
 }
 .header .header-con .header-nav .header-nav-item {
-  width: 50%;
-  text-align: right;
+  width: 20%;
+  text-align: center;
   font-weight: 400;
+  float: left;
 }
 .header .header-con .header-nav .header-nav-item:nth-child(4) {
-  width: 50%;
-  text-align: right;
+  width: 20%;
+  text-align: center;
   font-weight: 400;
 }
 .header .header-con .header-nav .header-nav-item:nth-child(4) a {
@@ -135,31 +139,33 @@ textarea {
   width: 80px;
   padding-bottom: 8px;
   font-weight: bold;
-  display: block;
-  text-align: center;
-  margin-left: 110px;
 }
 .header .header-con .header-en {
-  position: absolute;
-  right: -200px;
-  top: 62px;
+  float: left;
   font-size: 16px;
-  display: flex;
+  padding-top: 62px;
+  margin-left: 3%;
+  width: 12%;
 }
-.header .header-con .header-en a:first-child {
+.header .header-con .header-en .header-en-span1 {
+  float: left;
+}
+.header .header-con .header-en .header-en-a1 {
   margin-right: 10px;
   margin-left: 5px;
-  font-weight: bold;
+  float: left;
 }
-.header .header-con .header-en a:last-child {
+.header .header-con .header-en .header-en-a2 {
   margin-left: 10px;
   margin-right: 5px;
+  font-weight: bold;
+  float: left;
 }
 .header .header-con .header-en .hader-en-sx {
   height: 10px;
   border-right: 1px #fff solid;
-  display: block;
   margin-top: 15px;
+  float: left;
 }
 .content {
   margin: auto;
@@ -180,13 +186,21 @@ textarea {
   height: 310px;
   width: 1200px;
   display: flex;
+  float: left;
 }
 .content .content-con .content-con-left {
   width: 590px;
   height: 310px;
+  float: left;
+}
+.content .content-con .content-con-left img {
+  width: 590px;
+  height: 310px;
 }
 .content .content-con .content-con-right {
-  margin: 60px 65px 0px 37px;
+  float: left;
+  width: 508px;
+  padding: 60px 65px 0px 37px;
 }
 .content .content-con .content-con-right .content-con-right-title {
   font-size: 20px;
@@ -229,16 +243,19 @@ textarea {
   text-align: center;
 }
 .footer {
-  margin-top: 90px;
   color: #333333;
+  float: left;
+  width: 100%;
 }
 .footer .footer-con {
   width: 1200px;
   margin: auto;
   display: flex;
+  padding-top: 90px;
 }
 .footer .footer-con .footer-con-lxwm {
   width: 40%;
+  float: left;
 }
 .footer .footer-con .footer-con-lxwm .footer-con-lxwm-header {
   font-weight: bolder;
@@ -248,19 +265,23 @@ textarea {
 .footer .footer-con .footer-con-lxwm .footer-con-lxwm-con {
   display: flex;
   font-size: 16px;
+  float: left;
 }
 .footer .footer-con .footer-con-lxwm .footer-con-lxwm-con .footer-con-lxwm-con-left {
   width: 80px;
+  float: left;
 }
 .footer .footer-con .footer-con-lxwm .footer-con-lxwm-con .footer-con-lxwm-con-right {
   width: 280px;
+  float: left;
 }
 .footer .footer-con .footer-con-lxwm .footer-con-lxwm-con:last-child {
   line-height: 25px;
   padding-top: 5px;
 }
 .footer .footer-con .footer-con-gzh {
-  width: 39%;
+  width: 35%;
+  float: left;
 }
 .footer .footer-con .footer-con-gzh .footer-con-gzh-header {
   font-weight: bolder;
@@ -269,29 +290,52 @@ textarea {
   margin-left: 6px;
 }
 .footer .footer-con .footer-con-kefu {
-  width: 21%;
+  width: 25%;
+  float: left;
 }
 .footer .footer-con .footer-con-kefu .footer-con-kefu-header {
   font-weight: bolder;
   font-size: 22px;
   height: 70px;
+  padding-left: 6px;
+}
+.footer .footer-con .footer-con-kefu .footer-con-kefu-con {
+  padding-left: 6px;
 }
 .footer .footer-con .footer-con-kefu .footer-con-kefu-con p {
   font-size: 16px;
 }
+.footer .footer-con .footer-con-kefu .footer-con-kefu-bottom .footer-con-kefu-bottom-item {
+  width: 33.3333%;
+  float: left;
+  text-align: center;
+}
+.footer .footer-con .footer-con-kefu .footer-con-kefu-bottom .footer-con-kefu-bottom-item img {
+  margin: auto;
+}
+.footer .footer-con .footer-con-kefu .footer-con-kefu-bottom .footer-con-kefu-bottom-item p {
+  font-size: 16px;
+}
 .footer .footer-text {
+  float: left;
   margin-top: 100px;
   color: #ffffff;
   line-height: 40px;
   font-size: 14px;
   text-align: center;
   background: #201F1F;
+  width: 100%;
 }
 .footer .footer-text sup {
   font-size: 14px;
 }
 .fudong {
   position: fixed;
-  right: 100px;
-  top: 780px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 999;
+}
+.fudong img {
+  height: 210px;
+  width: 200px;
 }

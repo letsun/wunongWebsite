@@ -130,16 +130,20 @@ textarea {
     height: 160px;
     background: #FE8901;
     color: #ffffff;
+    position: relative;
 
     .header-con {
         width: 1200px;
         margin: auto;
         display: flex;
         position: relative;
+        
+        
         .header-logo {
             width: 20%;
-
+            float: left;
             padding-top: 37px;
+            
 
             p {
                 margin-top: 5px;
@@ -149,21 +153,20 @@ textarea {
         }
 
         .header-nav {
-            width: 80%;
+            width: 65%;
             display: flex;
             padding-top: 62px;
             font-size: 16px;
-
+            float: left;
             .header-nav-item {
-                width: 50%;
-                text-align: right;
+                width: 20%;
+                text-align: center;
                 font-weight: 400;
-
+                float: left;
             }
 
-            .header-nav-item:nth-child(1) {
-                width: 50%;
-                text-align: right;
+            .header-nav-item:first-child {
+                text-align: center;
                 font-weight: 400;
 
                 a {
@@ -173,41 +176,43 @@ textarea {
                     width: 80px;
                     padding-bottom: 8px;
                     font-weight: bold;
-                    display: block;
-                    text-align: center;
-                    margin-left: 110px;
+
                 }
             }
         }
-
-
         .header-en {
-            position: absolute;
-            right: -200px;
-            top: 62px;
+            float: left;
             font-size: 16px;
-            display: flex;
+            padding-top: 62px;
+            margin-left: 3%;
+            width: 12%;
+            
     
-            a:first-child {
+            .header-en-span1 {
+                float: left;
+            }
+            .header-en-a2 {
                 margin-right: 10px;
                 margin-left: 5px;
-    
+                font-weight: bold;
+                float: left; 
             }
     
-            a:last-child {
+            .header-en-a1 {
                 margin-left: 10px;
                 margin-right: 5px;
-                font-weight: bold;
-                // color: #FE8901;
+                // color: #FE8901;               
+                float: left;
             }
     
             .hader-en-sx {
                 height: 10px;
                 border-right: 1px #fff solid;
-                display: block;
+    
                 margin-top: 15px;
+                float: left;
             }
-        }
+        }     
     }
 
 
@@ -249,9 +254,12 @@ textarea {
         .content-con-left {
             width: 590px;
             height: 310px;
+            float: left;
         }
         .content-con-right {
+            width: 610-65-37px;
             margin: 60px 65px 0px 37px;
+            float: left;
 
             .content-con-right-title{
                 font-size:20px;
@@ -306,15 +314,18 @@ textarea {
 .footer {
     margin-top: 90px;
     color: #333333;
+    float: left;
+    width: 100%;
 
     .footer-con {
         width: 1200px;
         margin: auto;
         display: flex;
+        padding-top: 90px;
 
         .footer-con-lxwm {
             width: 35%;
-
+            float: left;
             .footer-con-lxwm-header {
                 font-weight: bolder;
                 font-size: 22px;
@@ -325,14 +336,22 @@ textarea {
             .footer-con-lxwm-con {
                 display: flex;
                 font-size: 16px;
+                float: left;
+                width: 100%;
 
                 .footer-con-lxwm-con-left {
                     // width: 80px;
                     font-weight: bold;
+                    float: left;
                 }
 
                 .footer-con-lxwm-con-right {
                     // width: 280px;
+                    float: left;
+                    // a {
+                    //     border-bottom: 1px solid blue; 
+                    //     color: blue;
+                    // }
                 }
             }
 
@@ -347,11 +366,12 @@ textarea {
 
         .footer-con-gzh {
             width: 30%;
-
+            float: left;
             .footer-con-gzh-header {
                 font-weight: bolder;
                 font-size: 22px;
                 height: 70px;
+                text-align: center;
             }
 
             .footer-con-gzh-con {
@@ -363,17 +383,40 @@ textarea {
         }
 
         .footer-con-kefu {
+            float: left;
             width: 26%;
             margin-left: 9%;
             .footer-con-kefu-header {
+                padding-left: 6px;
                 font-weight: bolder;
                 font-size: 22px;
                 height: 70px;
             }
 
             .footer-con-kefu-con {
+                padding-left: 6px;
                 p {
                     font-size: 16px;
+                }
+                p:first-child {
+                    font-weight: bold;
+                }
+            }
+
+
+            .footer-con-kefu-bottom {
+                .footer-con-kefu-bottom-item {
+                    width: 33.3333%;
+                    float: left;
+                    text-align: center;
+                    img {
+                        margin: auto;
+                    }
+                    p {
+                        font-size: 14px;
+                        line-height: 14px;
+                        padding-top: 10px;
+                    }
                 }
             }
 
@@ -382,6 +425,7 @@ textarea {
 
 
     .footer-text {
+        float: left;
         margin-top: 100px;
         color: rgba(255, 255, 255, 1);
         line-height: 40px;
@@ -389,7 +433,7 @@ textarea {
         font-size: 14px;
         text-align: center;
         background: #201F1F;
-
+        width: 100%;
         sup {
             font-size: 14px;
         }
@@ -397,8 +441,15 @@ textarea {
 
 }
 
+
 .fudong {
     position: fixed;
-    right: 100px;
-    top: 780px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 999;
+
+    img {
+        height: 300px;
+        width: 210px;
+    }
 }

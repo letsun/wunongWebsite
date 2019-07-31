@@ -138,10 +138,12 @@ textarea {
         display: flex;
         position: relative;
         
+        
         .header-logo {
             width: 20%;
-
+            float: left;
             padding-top: 37px;
+            
 
             p {
                 margin-top: 5px;
@@ -151,21 +153,20 @@ textarea {
         }
 
         .header-nav {
-            width: 80%;
+            width: 65%;
             display: flex;
             padding-top: 62px;
             font-size: 16px;
-
+            float: left;
             .header-nav-item {
-                width: 50%;
-                text-align: right;
+                width: 20%;
+                text-align: center;
                 font-weight: 400;
-
+                float: left;
             }
 
             .header-nav-item:nth-child(2) {
-                width: 50%;
-                text-align: right;
+                text-align: center;
                 font-weight: 400;
 
                 a {
@@ -180,131 +181,148 @@ textarea {
             }
         }
         .header-en {
-            position: absolute;
-            right: -200px;
-            top: 62px;
+            float: left;
             font-size: 16px;
-            display: flex;
+            padding-top: 62px;
+            margin-left: 3%;
+            width: 12%;
+            
     
-            a:first-child {
+            .header-en-span1 {
+                float: left;
+            }
+            .header-en-a2 {
                 margin-right: 10px;
                 margin-left: 5px;
-    
+                font-weight: bold;
+                float: left; 
             }
     
-            a:last-child {
+            .header-en-a1 {
                 margin-left: 10px;
                 margin-right: 5px;
                 // color: #FE8901;
-                font-weight: bold;
+                
+                float: left;
             }
     
             .hader-en-sx {
                 height: 10px;
                 border-right: 1px #fff solid;
-                display: block;
+    
                 margin-top: 15px;
+                float: left;
             }
-        }        
+        }     
     }
 
 
 }
 
 .banner {
-
+    float: left;
+    width: 100%;
     img {
       width:100%;
       height: 700px;
     }
 }
 
-.content {
-    margin: auto;
-    width: 1200px;
-    position: relative;
-
-    .content-header {
-        background: #FF8900;
+.contenta {
+    float: left;
+    width: 100%;
+    .content {
+        margin: auto;
         width: 1200px;
-        height: 240px;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: -60px;
-        text-align: center;
-        color: #fff;
-        border-radius: 15px;
-
-        p:first-child {
-          font-size: 40px;  
-          padding-top: 40px;
-          padding-bottom: 15px;
-          line-height: normal;
-
-          font-weight: bold;
-        }
-
-        p {
-            font-size: 26px;
-            line-height: 34px;
-            span {
-                font-size: 30px;
-                font-weight: bold;
+        position: relative;
+    
+        .content-header {
+            background: #FF8900;
+            width: 1200px;
+            height: 240px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: -60px;
+            text-align: center;
+            color: #fff;
+            border-radius: 15px;
+    
+            p:first-child {
+              font-size: 40px;  
+              padding-top: 40px;
+              padding-bottom: 15px;
+              line-height: normal;
+    
+              font-weight: bold;
             }
-        }
-    }
-
-    .content-con {
-        padding-top: 270px;
-
-        .content-con-hader {
-          
-           img {
-            margin: auto;
-           }
-        }
-
-        .content-con-con {
-            display: flex;
-            margin-top: 50px;
-            
-            .content-con-con-item {
-                width: 33.3333%;
-                position: relative;
-            }
-            .content-con-con-item:last-child {
-                position: relative;
-
-                img {
-                    position: absolute;
-                    right: 0;
+    
+            p {
+                font-size: 26px;
+                line-height: 34px;
+                span {
+                    font-size: 30px;
+                    font-weight: bold;
                 }
             }
-
-            .content-con-con-item:nth-child(2) {
-        
-                img {
-                    margin: auto;
-                }
+        }
+    
+        .content-con {
+            padding-top: 270px;
+    
+            .content-con-hader {
+              
+               img {
+                margin: auto;
+               }
             }
+    
+            .content-con-con {
+                display: flex;
+                margin-top: 50px;
+                
+                .content-con-con-item {
+                    width: 33.3333%;
+                    position: relative;
+                    float: left;
+                }
+                .content-con-con-item:last-child {
+                    position: relative;
+    
+                    img {
+                        position: absolute;
+                        right: 0;
+                    }
+                }
+    
+                .content-con-con-item:nth-child(2) {
             
+                    img {
+                        margin: auto;
+                    }
+                }
+                
+            }
         }
     }
 }
 
+
 .footer {
     margin-top: 90px;
     color: #333333;
+    float: left;
+    width: 100%;
 
     .footer-con {
         width: 1200px;
         margin: auto;
         display: flex;
+        padding-top: 90px;
 
         .footer-con-lxwm {
             width: 35%;
-
+            float: left;
             .footer-con-lxwm-header {
                 font-weight: bolder;
                 font-size: 22px;
@@ -315,14 +333,23 @@ textarea {
             .footer-con-lxwm-con {
                 display: flex;
                 font-size: 16px;
+                float: left;
+                width: 100%;
 
                 .footer-con-lxwm-con-left {
                     // width: 80px;
                     font-weight: bold;
+                    float: left;
                 }
 
                 .footer-con-lxwm-con-right {
                     // width: 280px;
+                    float: left;
+
+                    // a {
+                    //     border-bottom: 1px solid blue; 
+                    //     color: blue;
+                    // }
                 }
             }
 
@@ -337,11 +364,12 @@ textarea {
 
         .footer-con-gzh {
             width: 30%;
-
+            float: left;
             .footer-con-gzh-header {
                 font-weight: bolder;
                 font-size: 22px;
                 height: 70px;
+                text-align: center;
             }
 
             .footer-con-gzh-con {
@@ -353,17 +381,40 @@ textarea {
         }
 
         .footer-con-kefu {
+            float: left;
             width: 26%;
             margin-left: 9%;
             .footer-con-kefu-header {
+                padding-left: 6px;
                 font-weight: bolder;
                 font-size: 22px;
                 height: 70px;
             }
 
             .footer-con-kefu-con {
+                padding-left: 6px;
                 p {
                     font-size: 16px;
+                }
+                p:first-child {
+                    font-weight: bold;
+                }
+            }
+
+
+            .footer-con-kefu-bottom {
+                .footer-con-kefu-bottom-item {
+                    width: 33.3333%;
+                    float: left;
+                    text-align: center;
+                    img {
+                        margin: auto;
+                    }
+                    p {
+                        font-size: 14px;
+                        line-height: 14px;
+                        padding-top: 10px;
+                    }
                 }
             }
 
@@ -372,6 +423,7 @@ textarea {
 
 
     .footer-text {
+        float: left;
         margin-top: 100px;
         color: rgba(255, 255, 255, 1);
         line-height: 40px;
@@ -379,11 +431,24 @@ textarea {
         font-size: 14px;
         text-align: center;
         background: #201F1F;
-
+        width: 100%;
         sup {
             font-size: 14px;
         }
     }
 
+}
+
+
+.fudong {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    z-index: 999;
+
+    img {
+        height: 300px;
+        width: 210px;
+    }
 }
 
