@@ -203,6 +203,10 @@ textarea {
   width: 590px;
   height: 310px;
 }
+.content .content-con .content-con-left img {
+  width: 590px;
+  height: 310px;
+}
 .content .content-con .content-con-right {
   float: left;
   width: 508px;
