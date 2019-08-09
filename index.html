@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="Keywords" content="物农网，订单农业、农产品,农业电商，农副产品，家庭配送、认种、认养、c2f、电子商务、商城、社群、社区、团购、店长、有机食品、健康食品、绿色食品、从田间到餐桌、有机农场、原产地、地理标识、非物质文化遗产 名牌产品、特价、大米，面粉、巧克力、进口、粮油，食用油、海鲜、牛肉、猪肉、鸡蛋、鸭蛋、面条，网红款、水果、苹果、橙、猕猴桃、车厘子、饮料、葡萄酒、坚果、蔬菜、零食、茶叶、杂粮"/>
-    <meta name="Description" content="物农网——中国的订单农业践行者，集合物农优品、物农家仓、物农108、物农食堂四大模块，创建物农标准，重新定义农业电商的内涵和外延。 物农网是一家C2F订单农业模式的生态农产品电子商务交易平台，足家庭健康，链接餐桌到田间，按需定制，构建产销一体化，社区数字化的订单农业生态网。以稀缺的农副产品为标的，通过认购、认种、认养等方式连接农场与餐桌，为广大消费者提供有机、绿色、无公害的安全健康农产品"/>
+    <meta name="Keywords"
+        content="物农网，订单农业、农产品,农业电商，农副产品，家庭配送、认种、认养、c2f、电子商务、商城、社群、社区、团购、店长、有机食品、健康食品、绿色食品、从田间到餐桌、有机农场、原产地、地理标识、非物质文化遗产 名牌产品、特价、大米，面粉、巧克力、进口、粮油，食用油、海鲜、牛肉、猪肉、鸡蛋、鸭蛋、面条，网红款、水果、苹果、橙、猕猴桃、车厘子、饮料、葡萄酒、坚果、蔬菜、零食、茶叶、杂粮" />
+    <meta name="Description"
+        content="物农网——中国的订单农业践行者，集合物农优品、物农家仓、物农108、物农食堂四大模块，创建物农标准，重新定义农业电商的内涵和外延。 物农网是一家C2F订单农业模式的生态农产品电子商务交易平台，足家庭健康，链接餐桌到田间，按需定制，构建产销一体化，社区数字化的订单农业生态网。以稀缺的农副产品为标的，通过认购、认种、认养等方式连接农场与餐桌，为广大消费者提供有机、绿色、无公害的安全健康农产品" />
     <title>物农网，立足家庭健康，链接餐桌到田间，按需定制，构建社区数字化的订单农业生态网。</title>
     <link rel="icon" href="imgen/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/index.css">
@@ -14,6 +16,10 @@
     <script src="js/lib/jquery.min.js"></script>
     <script src="js/lib/swiper-3.3.1.min.js"></script>
 
+    <script src="js/lib/jquery.qrcode.js"></script>
+    <script src="js/lib/utf.js"></script>
+
+    <script src="js/index.js"></script>
 </head>
 
 <body>
@@ -99,24 +105,24 @@
                             <img src="img/1_38.png" alt="" srcset=""></a>
                     </div>
 
-                    <div class="con-dpjd-sp">
+                    <div class="con-dpjd-sp itema">
                         <div href="#" class="item">
                             <a class="item-click">
                                 <img src="img/1_40.png" alt="" srcset="">
                                 <p class="box">迪士尼【坚果脆坚果立 方3种口味】108g*2袋</p>
-                                <span>¥32.90</span>
+                                <span>￥32.90</span>
                             </a>
                             <div class="item-hover">
                                 <img src="img/1_1_1.png" alt="" srcset="">
                                 <p>扫一扫</p>
                                 <p>轻松购</p>
                             </div>
-                        </div>
+                        </div> 
                         <div href="#" class="item">
                             <a class="item-click">
                                 <img src="img/1_41.png" alt="" srcset="">
                                 <p class="box" id="box">迪士尼【每日口粮系列7款单品】20g*4袋/38</p>
-                                <span>¥14.90-39.90</span>
+                                <span>￥14.90-39.90</span>
                             </a>
                             <div class="item-hover">
                                 <img src="img/1_1_2.png" alt="" srcset="">
@@ -128,7 +134,7 @@
                             <a class="item-click">
                                 <img src="img/1_42.png" alt="" srcset="">
                                 <p class="box">迪士尼【每日坚果9种单品】25g*30包</p>
-                                <span>¥139.90</span>
+                                <span>￥139.90</span>
                             </a>
                             <div class="item-hover">
                                 <img src="img/1_1_3.png" alt="" srcset="">
@@ -140,7 +146,7 @@
                             <a class="item-click">
                                 <img src="img/1_43.png" alt="" srcset="">
                                 <p class="box">正大【开心鸭礼盒装】500g*1盒</p>
-                                <span>¥49.90</span>
+                                <span>￥49.90</span>
                             </a>
                             <div class="item-hover">
                                 <img src="img/1_1_4.png" alt="" srcset="">
@@ -148,11 +154,25 @@
                                 <p>轻松购</p>
                             </div>
                         </div>
+
+
+                        <!-- <div href="#" class="item">
+                            <a class="item-click">
+                                <img src="img/1_43.png" alt="" srcset="">
+                                <p class="box">物农定制（众星拱月中秋月饼礼盒）奶黄流心50g*4*火腿五仁500g*1预售进行中</p>
+                                <span>￥199.00</span>
+                            </a>
+                            <div class="item-hover">
+                                <img src="img/1_1_5.png" alt="" srcset="">
+                                <p>扫一扫</p>
+                                <p>轻松购</p>
+                            </div>
+                        </div> -->
                     </div>
 
                 </div>
                 <!-- 新品首发 -->
-                <div class="con-xpsf">
+                <div class="con-xpsf ">
                     <div class="con-xpsf-nav">
                         <img src="img/1_21.png" alt="" srcset="">
                     </div>
@@ -163,12 +183,12 @@
                             <img src="img/1_37.png" alt="" srcset=""></a>
                     </div>
 
-                    <div class="con-xpsf-sp">
+                    <div class="con-xpsf-sp itema">
                         <div href="#" class="item">
                             <a class="item-click">
                                 <img src="img/1_45.png" alt="" srcset="">
                                 <p class="box">仙草凉凉【台湾烧仙草】310g*4盒</p>
-                                <span>¥49.90</span>
+                                <span>￥49.90</span>
                             </a>
                             <div class="item-hover">
                                 <img src="img/1_2_1.png" alt="" srcset="">
@@ -180,7 +200,7 @@
                             <a class="item-click">
                                 <img src="img/1_46.png" alt="" srcset="">
                                 <p class="box">百岁老人【火麻油】250ml*1瓶</p>
-                                <span>¥49.90</span>
+                                <span>￥49.90</span>
                             </a>
                             <div class="item-hover">
                                 <img src="img/1_2_2.png" alt="" srcset="">
@@ -192,7 +212,7 @@
                             <a class="item-click">
                                 <img src="img/1_47.png" alt="" srcset="">
                                 <p class="box">盛斋【藤稔葡萄】1.5kg*1箱</p>
-                                <span>¥56.00</span>
+                                <span>￥56.00</span>
                             </a>
                             <div class="item-hover">
                                 <img src="img/1_2_3.png" alt="" srcset="">
@@ -204,7 +224,7 @@
                             <a class="item-click">
                                 <img src="img/1_48.png" alt="" srcset="">
                                 <p class="box">欣农【金飞香瓜】3.5kg*1箱</p>
-                                <span>¥75.00</span>
+                                <span>￥75.00</span>
                             </a>
                             <div class="item-hover">
                                 <img src="img/1_2_4.png" alt="" srcset="">
@@ -216,7 +236,7 @@
                             <a class="item-click">
                                 <img src="img/1_49.jpg" alt="" srcset="">
                                 <p class="box">景卉【特种植物蜂蜜】1000g*1瓶</p>
-                                <span>¥299.00</span>
+                                <span>￥299.00</span>
                             </a>
                             <div class="item-hover">
                                 <img src="img/1_2_5.png" alt="" srcset="">
@@ -228,7 +248,7 @@
                             <a class="item-click">
                                 <img src="img/1_50.png" alt="" srcset="">
                                 <p class="box">朱鹮湖【有机菜籽油】1L*3瓶/5L*1桶</p>
-                                <span>¥99-162</span>
+                                <span>￥99-162</span>
                             </a>
                             <div class="item-hover">
                                 <img src="img/1_2_6.png" alt="" srcset="">
@@ -252,12 +272,12 @@
                             <img src="img/1_36.png" alt="" srcset=""></a>
                     </div>
 
-                    <div class="con-yjsh-sp">
+                    <div class="con-yjsh-sp itema">
                         <div href="#" class="item">
                             <a class="item-click">
                                 <img src="img/1_51.png" alt="" srcset="">
                                 <p class="box">优滋美【有机紫菜】50g*4包 </p>
-                                <span>¥49.90</span>
+                                <span>￥49.90</span>
                             </a>
                             <div class="item-hover">
                                 <img src="img/1_3_1.png" alt="" srcset="">
@@ -265,11 +285,11 @@
                                 <p>轻松购</p>
                             </div>
                         </div>
-                        <div href="#" class="item">
+                        <div href="#" class="item itema">
                             <a class="item-click">
                                 <img src="img/1_52.png" alt="" srcset="">
                                 <p class="box">三秋优谷【有机野旱麦 石磨精粉】1.5kg*1袋 </p>
-                                <span>¥75.00</span>
+                                <span>￥75.00</span>
                             </a>
                             <div class="item-hover">
                                 <img src="img/1_3_2.png" alt="" srcset="">
@@ -281,7 +301,7 @@
                             <a class="item-click">
                                 <img src="img/1_53.png" alt="" srcset="">
                                 <p class="box">三秋优谷【有机野旱麦石磨全麦面粉】1.5...</p>
-                                <span>¥78.00</span>
+                                <span>￥78.00</span>
                             </a>
                             <div class="item-hover">
                                 <img src="img/1_3_3.png" alt="" srcset="">
@@ -293,7 +313,7 @@
                             <a class="item-click">
                                 <img src="img/1_54.png" alt="" srcset="">
                                 <p class="box">浩良河【原生态东北有机大米】5kg*1盒</p>
-                                <span>¥89.00</span>
+                                <span>￥89.00</span>
                             </a>
                             <div class="item-hover">
                                 <img src="img/1_3_4.png" alt="" srcset="">
@@ -305,7 +325,7 @@
                             <a class="item-click">
                                 <img src="img/1_55.png" alt="" srcset="">
                                 <p class="box">蛙声小镇【有机石磨五谷粉】2.5kg*1袋</p>
-                                <span>¥99.00</span>
+                                <span>￥99.00</span>
                             </a>
                             <div class="item-hover">
                                 <img src="img/1_3_5.png" alt="" srcset="">
@@ -317,7 +337,7 @@
                             <a class="item-click">
                                 <img src="img/1_56.png" alt="" srcset="">
                                 <p class="box">东奥食品【有机大麦若叶青汁粉】4g*50袋/p>
-                                <span>¥108.00</span>
+                                    <span>￥108.00</span>
                             </a>
                             <div class="item-hover">
                                 <img src="img/1_3_6.png" alt="" srcset="">
@@ -398,65 +418,9 @@
             </div>
         </div>
 
-        <script>
-            var swiper = new Swiper('.swiper-container', {
-                loop: true,
-                autoplay: 2500,
-                disableOnInteraction: false,
-                autoplayDisableOnInteraction: false,
-                // pagination: '.swiper-pagination',
-            });
+        <div id="qrcode" style="display: none;"></div>
 
 
-
-            $(".con-dpjd-sp .item").on('mouseover', function () {
-                var index = $(this).index();
-
-                $(".con-dpjd-sp .item").eq(index).find('.item-hover').show()
-            })
-
-            $(".con-dpjd-sp .item").on('mouseout', function () {
-                var index = $(this).index();
-
-                $(".con-dpjd-sp .item").eq(index).find('.item-hover').hide()
-            })
-
-
-            $(".con-xpsf-sp .item").on('mouseover', function () {
-                var index = $(this).index();
-
-                $(".con-xpsf-sp .item").eq(index).find('.item-hover').show()
-            })
-
-            $(".con-xpsf-sp .item").on('mouseout', function () {
-                var index = $(this).index();
-
-                $(".con-xpsf-sp .item").eq(index).find('.item-hover').hide()
-            })
-
-
-            $(".con-yjsh-sp .item").on('mouseover', function () {
-                var index = $(this).index();
-
-                $(".con-yjsh-sp .item").eq(index).find('.item-hover').show()
-            })
-
-            $(".con-yjsh-sp .item").on('mouseout', function () {
-                var index = $(this).index();
-
-                $(".con-yjsh-sp .item").eq(index).find('.item-hover').hide()
-            })
-
-
-            $('.box').each(function(i,item){
-                var newstr;                
-                newstr = $(item).html().substr(0, 20);
-                if (newstr.length <= 3) {
-                    return
-                }
-                $(item).html(newstr + '...'); 
-            })
-
-        </script>
 </body>
+
 </html>

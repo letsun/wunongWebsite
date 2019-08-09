@@ -276,6 +276,8 @@ textarea {
 }
 .cona .con .con-dpjd .con-dpjd-sp .item .item-click img {
   margin: auto;
+  max-width: 178px;
+  max-height: 178px;
 }
 .cona .con .con-dpjd .con-dpjd-sp .item .item-click p {
   padding-top: 10px;
@@ -291,20 +293,24 @@ textarea {
   font-size: 16px;
   height: 43px;
 }
+.cona .con .con-dpjd .con-dpjd-sp .item .item-click del {
+  color: #666;
+  font-size: 12px;
+  margin-left: 10px;
+}
 .cona .con .con-dpjd .con-dpjd-sp .item .item-click span {
   color: #ef000e;
-  margin-left: 15px;
   font-weight: bold;
 }
 .cona .con .con-dpjd .con-dpjd-sp .item .item-hover {
   position: absolute;
   top: 0px;
-  left: 10px;
+  left: 0px;
   right: 0;
   bottom: 0;
   display: none;
   height: 260px;
-  width: 180px;
+  width: 190px;
   box-shadow: 0px 5px 5px 5px #ddd;
   background: #fff;
 }
@@ -347,6 +353,8 @@ textarea {
 }
 .cona .con .con-xpsf .con-xpsf-sp .item .item-click img {
   margin: auto;
+  max-width: 178px;
+  max-height: 178px;
 }
 .cona .con .con-xpsf .con-xpsf-sp .item .item-click p {
   padding-top: 10px;
@@ -362,20 +370,24 @@ textarea {
   font-size: 16px;
   height: 43px;
 }
+.cona .con .con-xpsf .con-xpsf-sp .item .item-click del {
+  color: #666;
+  font-size: 12px;
+  margin-left: 10px;
+}
 .cona .con .con-xpsf .con-xpsf-sp .item .item-click span {
   color: #ef000e;
-  margin-left: 15px;
   font-weight: bold;
 }
 .cona .con .con-xpsf .con-xpsf-sp .item .item-hover {
   position: absolute;
   top: 0px;
-  left: 10px;
+  left: 0px;
   right: 0;
   bottom: 0;
   display: none;
   height: 260px;
-  width: 180px;
+  width: 190px;
   box-shadow: 0px 5px 5px 5px #ddd;
   background: #fff;
 }
@@ -412,6 +424,8 @@ textarea {
 }
 .cona .con .con-yjsh .con-yjsh-sp .item .item-click img {
   margin: auto;
+  max-width: 178px;
+  max-height: 178px;
 }
 .cona .con .con-yjsh .con-yjsh-sp .item .item-click p {
   padding-top: 10px;
@@ -427,20 +441,24 @@ textarea {
   font-size: 16px;
   height: 43px;
 }
+.cona .con .con-yjsh .con-yjsh-sp .item .item-click del {
+  color: #666;
+  font-size: 12px;
+  margin-left: 10px;
+}
 .cona .con .con-yjsh .con-yjsh-sp .item .item-click span {
   color: #ef000e;
-  margin-left: 15px;
   font-weight: bold;
 }
 .cona .con .con-yjsh .con-yjsh-sp .item .item-hover {
   position: absolute;
   top: 0px;
-  left: 10px;
+  left: 0px;
   right: 0;
   bottom: 0;
   display: none;
   height: 260px;
-  width: 180px;
+  width: 190px;
   box-shadow: 0px 5px 5px 5px #ddd;
   background: #fff;
 }

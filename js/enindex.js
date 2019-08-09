@@ -4,6 +4,7 @@ $(function () {
             window.location.reload()
         }, 600000)
     }
+
     //获去分类id
     $.ajax({
         url: 'https://life.wnw108.com/business/product/getPrefectureByAreaType?areaType=1',
@@ -12,7 +13,6 @@ $(function () {
         contentType: "application/json",
         success: function (res) {
             getId(res.responseData[0].id)
-
             getId1(res.responseData[1].id)
             getId2(res.responseData[2].id)
         }
@@ -62,8 +62,8 @@ $(function () {
                     html += '</a>';
                     html += '<div class="item-hover">';
                     html += '<img src="img/1_1_1.png" alt="" srcset="">';
-                    html += '<p>扫一扫</p>';
-                    html += '<p>轻松购</p>';
+                    html += '<p>Wechat scanner</p>';
+                    html += '<p>Easy shopping</p>';
                     html += '</div>';
                     html += '</div>';
                 }
@@ -73,7 +73,7 @@ $(function () {
     }
 
 
-    //新品首发
+    //新品
     function getId1(id) {
         var objinfo = {
             pageNo: 0,
@@ -112,11 +112,13 @@ $(function () {
                     } else {
                         html += '<span>￥' + responseData[i].productDetail.spec1[0].colPrice + '~' + responseData[i].productDetail.spec1[spec1lent].colPrice + '</span> ';
                     }
+
+
                     html += '</a>';
                     html += '<div class="item-hover">';
                     html += '<img src="img/1_1_1.png" alt="" srcset="">';
-                    html += '<p>扫一扫</p>';
-                    html += '<p>轻松购</p>';
+                    html += '<p>Wechat scanner</p>';
+                    html += '<p>Easy shopping</p>';
                     html += '</div>';
                     html += '</div>';
                 }
@@ -168,8 +170,8 @@ $(function () {
                     html += '</a>';
                     html += '<div class="item-hover">';
                     html += '<img src="img/1_1_1.png" alt="" srcset="">';
-                    html += '<p>扫一扫</p>';
-                    html += '<p>轻松购</p>';
+                    html += '<p>Wechat scanner</p>';
+                    html += '<p>Easy shopping</p>';
                     html += '</div>';
                     html += '</div>';
                 }
@@ -177,8 +179,6 @@ $(function () {
             }
         });
     }
-
-
 
 
 
