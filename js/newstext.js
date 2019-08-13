@@ -31,7 +31,7 @@ $(function () {
             $(".header-en-a1").attr("href",'enrenzhong.html')
             $('.header-nav-item:first-child ').addClass('a1')
         }else{
-            html += '<a href="ennews.html"> news</a>><span class="news_title"> </span>';
+            html += '<a href="ennews.html"> 新闻资讯</a>><span class="news_title"> </span>';
 
             $(".header-en-a2").attr("href",'news.html')
             $(".header-en-a1").attr("href",'ennews.html')
@@ -43,7 +43,7 @@ $(function () {
 
 
         $.ajax({
-            url: 'http://manage.wnw108.com/w/api/news/' + newsId,
+            url: api.newlistdetail + newsId,
             type: 'POST',
             dataType: 'json',
 

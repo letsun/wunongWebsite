@@ -1,13 +1,12 @@
 var type = 1;
 $(function () {
     $.ajax({
-        url: "http://manage.wnw108.com/w/api/news/list",
+        url: api.newlist,
         type: 'POST',
         dataType: 'json',
 
         data: {
             langType: 0,  //0中文  1英文
-
             type:type  //类型
         },
         contentType: "application/json",
@@ -41,16 +40,14 @@ $(function () {
 
                 $('.content-con-right-con').each(function (i, item) {
                     var newstr;
-                    
-                    console.log(item)
-                    newstr = $(item).html().substr(0, 120);
-                    console.log(newstr)
-                    if (newstr.length <=1) {
-                        return 
-                    }
-                    
-                    $(item).html(newstr + '...<span>[阅读全文]</span>');
+                    if ($(item).html().length > 120) {
+                        newstr = $(item).html().substr(0, 120);
+                        $(item).html(newstr + '...');
+                    } 
                 })
+
+
+                $('.content-con-right-con').append("<span>[阅读全文]</span>")
 
             }
         }

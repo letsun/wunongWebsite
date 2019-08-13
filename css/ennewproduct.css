@@ -177,6 +177,7 @@ textarea {
   font-size: 16px;
   color: #666;
   margin-top: 60px;
+  font-weight: bold;
 }
 .content .content-text span {
   color: #FE8901;
@@ -240,7 +241,7 @@ textarea {
   background: #fff;
 }
 .content .content-con .item .item-hover img {
-  padding-top: 15px;
+  padding-top: 20px;
   width: 150px;
   height: 150px;
   margin: auto;
@@ -249,10 +250,9 @@ textarea {
 .content .content-con .item .item-hover p {
   text-align: center;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 16px;
   color: #ff8b04;
-  line-height: 35px;
-  letter-spacing: 10px;
+  line-height: 30px;
 }
 .content .content-con .item:nth-child(6n) {
   margin-right: 0;

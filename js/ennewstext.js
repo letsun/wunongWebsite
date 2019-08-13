@@ -42,7 +42,7 @@ $(function () {
 
 
         $.ajax({
-            url: 'http://manage.wnw108.com/w/api/news/' + newsId,
+            url: api.newlistdetail + newsId,
             type: 'POST',
             dataType: 'json',
 

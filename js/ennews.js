@@ -2,7 +2,7 @@
 var type = 5;
 $(function () {
     $.ajax({
-        url: "http://manage.wnw108.com/w/api/news/list",
+        url: api.newlist,
         type: 'POST',
         dataType: 'json',
 
@@ -14,7 +14,6 @@ $(function () {
         contentType: "application/json",
         success: function (res) {
             var html = '';
-
 
             if (res.code == 200) {
                 var newlist = res.result
@@ -42,16 +41,13 @@ $(function () {
 
                 $('.content-con-right-con').each(function (i, item) {
                     var newstr;
-                    
-                    console.log(item)
-                    newstr = $(item).html().substr(0, 120);
-                    console.log(newstr)
-                    if (newstr.length <=1) {
-                        return 
-                    }
-                    
-                    $(item).html(newstr + '...<span>[阅读全文]</span>');
+                    if ($(item).html().length > 120) {
+                        newstr = $(item).html().substr(0, 120);
+                        $(item).html(newstr + '...');
+                    } 
                 })
+
+                $('.content-con-right-con').append("<span>[Read All]</span>")
 
             }
         }

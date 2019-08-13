@@ -2,7 +2,7 @@
 var type = 5;
 $(function () {
     $.ajax({
-        url: "http://manage.wnw108.com/w/api/news/list",
+        url: api.newlist,
         type: 'POST',
         dataType: 'json',
 
@@ -27,7 +27,7 @@ $(function () {
                     html += '<a href="newstext.html?newsId=' + newlist[i].news_id +'&type=' + type + '" class="content-con-right">';
                     html += '<div class="content-con-right-title"> ' + newlist[i].news_title + '</div>';
 
-                    html += '<div class="content-con-right-con ">' + newlist[i].news_desc + '</div>';
+                    html += '<div class="content-con-right-con ">' + newlist[i].news_desc + '  </div>';
 
 
                     html += '<div class="content-con-right-bottom">发布时间：' + newlist[i].pub_time + '</div>';
@@ -39,19 +39,17 @@ $(function () {
 
 
                 $('.content').append(html)
-
+                
                 $('.content-con-right-con').each(function (i, item) {
                     var newstr;
-                    
-                    console.log(item)
-                    newstr = $(item).html().substr(0, 120);
-                    console.log(newstr)
-                    if (newstr.length <=1) {
-                        return 
-                    }
-                    
-                    $(item).html(newstr + '...<span>[阅读全文]</span>');
+                    if ($(item).html().length > 120) {
+                        newstr = $(item).html().substr(0, 120);
+                        $(item).html(newstr + '...');
+                    } 
                 })
+
+
+                $('.content-con-right-con').append("<span>[阅读全文]</span>")
 
             }
         }

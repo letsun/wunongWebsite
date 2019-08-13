@@ -105,8 +105,8 @@ function getId(id) {
                 html += '</a>';
                 html += '<div class="item-hover">';
                 html += '<img src="img/1_1_1.png" alt="" srcset="">';
-                html += '<p>扫一扫</p>';
-                html += '<p>轻松购</p>';
+                html += '<p>Wechat scanner</p>';
+                html += '<p>Easy shopping</p>';
                 html += '</div>';
                 html += '</div>';
             }
@@ -114,15 +114,10 @@ function getId(id) {
 
             //截取字符
             $('.box').each(function (i, item) {
-                var newstr;
-
-                console.log(newstr)
-                console.log(item)
-                newstr = $(item).html().substr(0, 20);
-                if (newstr.length <= 3) {
-                    return
+                if ($(item).html().length>20) {
+                    var newstr = $(item).html().substr(0, 20);
+                    $(item).html(newstr + '...');
                 }
-                $(item).html(newstr + '...');
             })
         }
     });

@@ -122,7 +122,7 @@ function getId(id) {
 
                 html += '</a>';
                 html += '<div class="item-hover">';
-                html += '<img src="img/1_1_1.png" alt="" srcset="">';
+                html += '<img  alt="" srcset="">';
                 html += '<p>Wechat scanner</p>';
                 html += '<p>Easy shopping</p>';
                 html += '</div>';
@@ -132,15 +132,10 @@ function getId(id) {
 
             //截取字符
             $('.box').each(function (i, item) {
-                var newstr;
-
-                console.log(newstr)
-                console.log(item)
-                newstr = $(item).html().substr(0, 20);
-                if (newstr.length <= 3) {
-                    return
+                if ($(item).html().length>20) {
+                    var newstr = $(item).html().substr(0, 20);
+                    $(item).html(newstr + '...');
                 }
-                $(item).html(newstr + '...');
             })
         }
     });
@@ -190,7 +185,7 @@ function getId1(id) {
 
                 html += '</a>';
                 html += '<div class="item-hover">';
-                html += '<img src="img/1_1_1.png" alt="" srcset="">';
+                html += '<img  alt="" srcset="">';
                 html += '<p>Wechat scanner</p>';
                 html += '<p>Easy shopping</p>';
                 html += '</div>';
@@ -200,15 +195,10 @@ function getId1(id) {
 
             //截取字符
             $('.box').each(function (i, item) {
-                var newstr;
-
-                console.log(newstr)
-                console.log(item)
-                newstr = $(item).html().substr(0, 20);
-                if (newstr.length <= 3) {
-                    return
+                if ($(item).html().length>20) {
+                    var newstr = $(item).html().substr(0, 20);
+                    $(item).html(newstr + '...');
                 }
-                $(item).html(newstr + '...');
             })
         }
     });
@@ -256,7 +246,7 @@ function getId2(id) {
 
                 html += '</a>';
                 html += '<div class="item-hover">';
-                html += '<img src="img/1_1_1.png" alt="" srcset="">';
+                html += '<img  alt="" srcset="">';
                 html += '<p>Wechat scanner</p>';
                 html += '<p>Easy shopping</p>';
                 html += '</div>';
@@ -266,15 +256,10 @@ function getId2(id) {
 
             //截取字符
             $('.box').each(function (i, item) {
-                var newstr;
-
-                console.log(newstr)
-                console.log(item)
-                newstr = $(item).html().substr(0, 20);
-                if (newstr.length <= 3) {
-                    return
+                if ($(item).html().length>20) {
+                    var newstr = $(item).html().substr(0, 20);
+                    $(item).html(newstr + '...');
                 }
-                $(item).html(newstr + '...');
             })
         }
     });
