@@ -180,23 +180,25 @@ textarea {
                 }
             }
         }
+
         .header-en {
             float: left;
             font-size: 16px;
             padding-top: 62px;
             margin-left: 3%;
             width: 12%;
-            
-    
+
+
             .header-en-span1 {
                 float: left;
             }
+
             .header-en-a1 {
                 margin-right: 10px;
                 margin-left: 5px;
-                float: left; 
+                float: left;
             }
-    
+
             .header-en-a2 {
                 margin-left: 10px;
                 margin-right: 5px;
@@ -204,11 +206,11 @@ textarea {
                 font-weight: bold;
                 float: left;
             }
-    
+
             .hader-en-sx {
                 height: 10px;
                 border-right: 1px #fff solid;
-    
+
                 margin-top: 15px;
                 float: left;
             }
@@ -217,7 +219,6 @@ textarea {
 
 
 }
-
 
 .content {
     margin: auto;
@@ -236,79 +237,110 @@ textarea {
 
     .content-nav {
         margin-top: 30px;
+
         img {
             margin: auto;
         }
     }
-    .content-con:hover {
-        box-shadow:3px 5px 27px 0px rgba(0, 0, 0, 0.3);
-    }
+
+
     .content-con {
-        margin-top: 50px;
-        height: 310px;
+        padding-top: 50px;
+
         width: 1200px;
-        display: flex;
-        
-        
-        .content-con-left {
-            width: 590px;
-            height: 310px;
+
+        .item {
+            margin-top: 50px;
+            width: 178px;
+            height: 262px;
+            font-size: 16px;
+            position: relative;
+            border: 1px #ddd solid;
             float: left;
+            margin-right: 24px;
 
-            img{
-                width: 590px;
-                height: 310px; 
-            }
-        }
-        .content-con-right {
-            float: left;
-            width: 610 - 65 - 37px;
-            padding: 60px 65px 0px 37px;
+            .item-click {
+                img {
+                    margin: auto;
+                    max-width: 178px;
+                    max-height: 178px;
+                }
 
-            .content-con-right-title{
-                font-size:20px;
-                font-weight: bolder;
-                overflow: hidden;
-                text-overflow:ellipsis;
-                white-space: nowrap;
-                width: 530px;
-            }
+                p {
+                    padding-top: 10px;
+                    line-height: normal;
+                    color: rgba(51, 51, 51, 1);
+                    width: 160px;
+                    margin: auto;
+                    margin-left: 10px;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    overflow: hidden;
+                }
 
-            .content-con-right-con {
-                margin-top: 20px;
-                display: -webkit-box;
-                -webkit-box-orient: vertical;
-                line-height: 24px;
-                -webkit-line-clamp: 4;
-                overflow: hidden;
-                // width: 518px;
-                color: #666;
-                font-size: 14px;
+                del {
+                    color: #666;
+                    font-size: 12px;
+                    margin-left: 10px;
+                }
 
                 span {
-                    font-size: 14px;
-                    color:#FE8901;
+                    color: rgba(239, 0, 14, 1);
+                    font-weight: bold;
+
                 }
             }
 
-            .content-con-right-bottom {
-                margin-top: 20px;
-                color: #666;
-                font-size: 14px;
-                text-align: right;
-                padding-right: 10px;
+
+            .item-hover {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0;
+                bottom: 0;
+                display: none;
+
+                height: 260px;
+                width: 190px;
+                box-shadow: 0px 5px 5px 5px #ddd;
+                background: #fff;
+
+                img {
+                    padding-top: 15px;
+                    width: 150px;
+                    height: 150px;
+                    margin: auto;
+                    padding-bottom: 10px;
+                }
+
+                p {
+                    text-align: center;
+                    font-weight: bold;
+                    font-size: 25px;
+                    color: #ff8b04;
+                    line-height: 35px;
+                    letter-spacing: 10px;
+                }
             }
         }
+
+
+        .item:nth-child(6n){
+            margin-right: 0;
+        }
     }
+
+
 
     .content-jiazai {
         margin: auto;
         margin-top: 50px;
-        width:92px;
-        border:1px solid rgba(153,153,153,1);
-        border-radius:4px; 
-        font-size: 16px;   
-        color: #999999;  
+        width: 92px;
+        border: 1px solid rgba(153, 153, 153, 1);
+        border-radius: 4px;
+        font-size: 16px;
+        color: #999999;
         line-height: 30px;
         text-align: center;
     }
@@ -318,6 +350,7 @@ textarea {
     color: #333333;
     float: left;
     width: 100%;
+
     .footer-con {
         width: 1200px;
         margin: auto;
@@ -328,11 +361,12 @@ textarea {
         .footer-con-lxwm {
             width: 40%;
             float: left;
+
             .footer-con-lxwm-header {
                 font-weight: bolder;
                 font-size: 22px;
                 height: 70px;
-                
+
             }
 
             .footer-con-lxwm-con {
@@ -364,6 +398,7 @@ textarea {
         .footer-con-gzh {
             width: 35%;
             float: left;
+
             .footer-con-gzh-header {
                 font-weight: bolder;
                 font-size: 22px;
@@ -375,6 +410,7 @@ textarea {
         .footer-con-kefu {
             width: 25%;
             float: left;
+
             .footer-con-kefu-header {
                 font-weight: bolder;
                 font-size: 22px;
@@ -384,6 +420,7 @@ textarea {
 
             .footer-con-kefu-con {
                 padding-left: 6px;
+
                 p {
                     font-size: 16px;
                 }
@@ -394,12 +431,14 @@ textarea {
                     width: 33.3333%;
                     float: left;
                     text-align: center;
+
                     img {
                         margin: auto;
                     }
+
                     p {
                         font-size: 16px;
-                        
+
                     }
                 }
             }

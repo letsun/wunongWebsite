@@ -1,5 +1,5 @@
 
-var type = 5;
+var type = 3;
 $(function () {
     $.ajax({
         url: "http://manage.wnw108.com/w/api/news/list",
@@ -7,7 +7,7 @@ $(function () {
         dataType: 'json',
 
         data: {
-            langType: 0,  //0中文  1英文
+            langType: 1,  //0中文  1英文
 
             type:type  //类型
         },
@@ -24,13 +24,13 @@ $(function () {
                     html += '<img src="' + newlist[i].news_img + '" alt="" srcset="">';
                     html += '</div>';
 
-                    html += '<a href="newstext.html?newsId=' + newlist[i].news_id +'&type=' + type + '" class="content-con-right">';
+                    html += '<a href="ennewstext.html?newsId=' + newlist[i].news_id +'&type=' + type + '" class="content-con-right">';
                     html += '<div class="content-con-right-title"> ' + newlist[i].news_title + '</div>';
 
                     html += '<div class="content-con-right-con ">' + newlist[i].news_desc + '</div>';
 
 
-                    html += '<div class="content-con-right-bottom">发布时间：' + newlist[i].pub_time + '</div>';
+                    html += '<div class="content-con-right-bottom">issuing time：' + newlist[i].pub_time + '</div>';
                     html += '</a>';
                     html += '</div>';
                     

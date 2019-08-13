@@ -6,7 +6,7 @@ $(function () {
     }
     //获去分类id
     $.ajax({
-        url: 'https://life.wnw108.com/business/product/getPrefectureByAreaType?areaType=1',
+        url: api.getPrefectureByAreaType,
         type: 'POST',
         dataType: 'json',
         contentType: "application/json",
@@ -17,170 +17,6 @@ $(function () {
             getId2(res.responseData[2].id)
         }
     });
-
-    //大牌驾到
-    function getId(id) {
-        var objinfo = {
-            pageNo: 0,
-            pageSize: 6,
-            orderBy: 'asc',
-            orderType: 'price',
-            requestData: {
-                areaType: 1,
-                id: id,
-            }
-        }
-        var html = '';
-        $.ajax({
-            url: 'https://life.wnw108.com/business/product/getPrefectureProductList',
-            type: 'POST',
-            dataType: 'json',
-            contentType: "application/json",
-            data: JSON.stringify(objinfo),
-            success: function (res) {
-                var responseData = res.responseData;
-                for (var i in responseData) {
-
-                    var spec1lent = res.responseData[i].productDetail.spec1.length - 1;
-
-                    console.log(responseData[3].productDetail.spec1.length)
-                    // console.log(spec1lent)
-
-                    html += '<div href="#" class="item" data-productId="' + responseData[i].productId + '">';
-                    html += '<a class="item-click">';
-                    html += '<img src="' + responseData[i].firstUrl + '">';
-                    html += '<p class="box"> ' + responseData[i].productName + '</p>';
-                    html += '<del>￥' + responseData[i].price + '</del> ';
-
-                    if (responseData[i].productDetail.spec1[0].colPrice == responseData[i].productDetail.spec1[spec1lent].colPrice) {
-                        html += '<span>￥' + responseData[i].productDetail.spec1[0].colPrice + '</span>';
-                    } else {
-                        html += '<span>￥' + responseData[i].productDetail.spec1[0].colPrice + '~' + responseData[i].productDetail.spec1[spec1lent].colPrice + '</span> ';
-                    }
-
-
-                    html += '</a>';
-                    html += '<div class="item-hover">';
-                    html += '<img src="img/1_1_1.png" alt="" srcset="">';
-                    html += '<p>扫一扫</p>';
-                    html += '<p>轻松购</p>';
-                    html += '</div>';
-                    html += '</div>';
-                }
-                $(".con-dpjd-sp").html(html)
-            }
-        });
-    }
-
-
-    //新品首发
-    function getId1(id) {
-        var objinfo = {
-            pageNo: 0,
-            pageSize: 6,
-            orderBy: 'asc',
-            orderType: 'price',
-            requestData: {
-                areaType: 1,
-                id: id,
-            }
-        }
-        var html = '';
-        $.ajax({
-            url: 'https://life.wnw108.com/business/product/getPrefectureProductList',
-            type: 'POST',
-            dataType: 'json',
-            contentType: "application/json",
-            data: JSON.stringify(objinfo),
-            success: function (res) {
-                var responseData = res.responseData;
-                for (var i in responseData) {
-
-                    var spec1lent = res.responseData[i].productDetail.spec1.length - 1;
-
-                    console.log(responseData[3].productDetail.spec1.length)
-                    // console.log(spec1lent)
-
-                    html += '<div href="#" class="item" data-productId="' + responseData[i].productId + '">';
-                    html += '<a class="item-click">';
-                    html += '<img src="' + responseData[i].firstUrl + '">';
-                    html += '<p class="box"> ' + responseData[i].productName + '</p>';
-                    html += '<del>￥' + responseData[i].price + '</del> ';
-
-                    if (responseData[i].productDetail.spec1[0].colPrice == responseData[i].productDetail.spec1[spec1lent].colPrice) {
-                        html += '<span>￥' + responseData[i].productDetail.spec1[0].colPrice + '</span>';
-                    } else {
-                        html += '<span>￥' + responseData[i].productDetail.spec1[0].colPrice + '~' + responseData[i].productDetail.spec1[spec1lent].colPrice + '</span> ';
-                    }
-                    html += '</a>';
-                    html += '<div class="item-hover">';
-                    html += '<img src="img/1_1_1.png" alt="" srcset="">';
-                    html += '<p>扫一扫</p>';
-                    html += '<p>轻松购</p>';
-                    html += '</div>';
-                    html += '</div>';
-                }
-                $(".con-xpsf-sp").html(html)
-            }
-        });
-    }
-    //大牌驾到
-    function getId2(id) {
-        var objinfo = {
-            pageNo: 0,
-            pageSize: 6,
-            orderBy: 'asc',
-            orderType: 'price',
-            requestData: {
-                areaType: 1,
-                id: id,
-            }
-        }
-        var html = '';
-        $.ajax({
-            url: 'https://life.wnw108.com/business/product/getPrefectureProductList',
-            type: 'POST',
-            dataType: 'json',
-            contentType: "application/json",
-            data: JSON.stringify(objinfo),
-            success: function (res) {
-                var responseData = res.responseData;
-                for (var i in responseData) {
-
-                    var spec1lent = res.responseData[i].productDetail.spec1.length - 1;
-
-                    console.log(responseData[3].productDetail.spec1.length)
-                    // console.log(spec1lent)
-
-                    html += '<div href="#" class="item" data-productId="' + responseData[i].productId + '">';
-                    html += '<a class="item-click">';
-                    html += '<img src="' + responseData[i].firstUrl + '">';
-                    html += '<p class="box"> ' + responseData[i].productName + '</p>';
-                    html += '<del>￥' + responseData[i].price + '</del> ';
-
-                    if (responseData[i].productDetail.spec1[0].colPrice == responseData[i].productDetail.spec1[spec1lent].colPrice) {
-                        html += '<span>￥' + responseData[i].productDetail.spec1[0].colPrice + '</span>';
-                    } else {
-                        html += '<span>￥' + responseData[i].productDetail.spec1[0].colPrice + '~' + responseData[i].productDetail.spec1[spec1lent].colPrice + '</span> ';
-                    }
-
-
-                    html += '</a>';
-                    html += '<div class="item-hover">';
-                    html += '<img src="img/1_1_1.png" alt="" srcset="">';
-                    html += '<p>扫一扫</p>';
-                    html += '<p>轻松购</p>';
-                    html += '</div>';
-                    html += '</div>';
-                }
-                $(".con-yjsh-sp").html(html)
-            }
-        });
-    }
-
-
-
-
 
 
     var swiper = new Swiper('.swiper-container', {
@@ -228,15 +64,201 @@ $(function () {
 
 
 
-    $('.box').each(function (i, item) {
-        var newstr;
-        newstr = $(item).html().substr(0, 20);
-        if (newstr.length <= 3) {
-            return
-        }
-        $(item).html(newstr + '...');
-    })
+
 
 
 })
+
+
+
+
+//大牌驾到
+function getId(id) {
+    var objinfo = {
+        pageNo: 0,
+        pageSize: 6,
+        orderBy: 'asc',
+        orderType: 'price',
+        requestData: {
+            areaType: 1,
+            id: id,
+        }
+    }
+    var html = '';
+    $.ajax({
+        url: api.getPrefectureProductList,
+        type: 'POST',
+        dataType: 'json',
+        contentType: "application/json",
+        data: JSON.stringify(objinfo),
+        success: function (res) {
+            var responseData = res.responseData;
+            for (var i in responseData) {
+
+                var spec1lent = res.responseData[i].productDetail.spec1.length - 1;
+
+
+                html += '<div href="#" class="item" data-productId="' + responseData[i].productId + '">';
+                html += '<a class="item-click">';
+                html += '<img src="' + responseData[i].firstUrl + '">';
+                html += '<p class="box"> ' + responseData[i].productName + '</p>';
+                html += '<del>￥' + responseData[i].price + '</del> ';
+
+                if (responseData[i].productDetail.spec1[0].colPrice == responseData[i].productDetail.spec1[spec1lent].colPrice) {
+                    html += '<span>￥' + responseData[i].productDetail.spec1[0].colPrice + '</span>';
+                } else {
+                    html += '<span>￥' + responseData[i].productDetail.spec1[0].colPrice + '~' + responseData[i].productDetail.spec1[spec1lent].colPrice + '</span> ';
+                }
+
+
+                html += '</a>';
+                html += '<div class="item-hover">';
+                html += '<img src="img/1_1_1.png" alt="" srcset="">';
+                html += '<p>扫一扫</p>';
+                html += '<p>轻松购</p>';
+                html += '</div>';
+                html += '</div>';
+            }
+            $(".con-dpjd-sp").html(html)
+
+            //截取字符
+            $('.box').each(function (i, item) {
+                var newstr;
+
+                console.log(newstr)
+                console.log(item)
+                newstr = $(item).html().substr(0, 20);
+                if (newstr.length <= 3) {
+                    return
+                }
+                $(item).html(newstr + '...');
+            })
+        }
+    });
+}
+
+
+//新品首发
+function getId1(id) {
+    var objinfo = {
+        pageNo: 0,
+        pageSize: 6,
+        orderBy: 'asc',
+        orderType: 'price',
+        requestData: {
+            areaType: 1,
+            id: id,
+        }
+    }
+    var html = '';
+    $.ajax({
+        url: api.getPrefectureProductList,
+        type: 'POST',
+        dataType: 'json',
+        contentType: "application/json",
+        data: JSON.stringify(objinfo),
+        success: function (res) {
+            var responseData = res.responseData;
+            for (var i in responseData) {
+
+                var spec1lent = res.responseData[i].productDetail.spec1.length - 1;
+
+                html += '<div href="#" class="item" data-productId="' + responseData[i].productId + '">';
+                html += '<a class="item-click">';
+                html += '<img src="' + responseData[i].firstUrl + '">';
+                html += '<p class="box"> ' + responseData[i].productName + '</p>';
+                html += '<del>￥' + responseData[i].price + '</del> ';
+
+                if (responseData[i].productDetail.spec1[0].colPrice == responseData[i].productDetail.spec1[spec1lent].colPrice) {
+                    html += '<span>￥' + responseData[i].productDetail.spec1[0].colPrice + '</span>';
+                } else {
+                    html += '<span>￥' + responseData[i].productDetail.spec1[0].colPrice + '~' + responseData[i].productDetail.spec1[spec1lent].colPrice + '</span> ';
+                }
+                html += '</a>';
+                html += '<div class="item-hover">';
+                html += '<img src="img/1_1_1.png" alt="" srcset="">';
+                html += '<p>扫一扫</p>';
+                html += '<p>轻松购</p>';
+                html += '</div>';
+                html += '</div>';
+            }
+            $(".con-xpsf-sp").html(html)
+
+            //截取字符
+            $('.box').each(function (i, item) {
+                var newstr;
+
+                console.log(newstr)
+                console.log(item)
+                newstr = $(item).html().substr(0, 20);
+                if (newstr.length <= 3) {
+                    return
+                }
+                $(item).html(newstr + '...');
+            })
+        }
+    });
+}
+//大牌驾到
+function getId2(id) {
+    var objinfo = {
+        pageNo: 0,
+        pageSize: 6,
+        orderBy: 'asc',
+        orderType: 'price',
+        requestData: {
+            areaType: 1,
+            id: id,
+        }
+    }
+    var html = '';
+    $.ajax({
+        url: api.getPrefectureProductList,
+        type: 'POST',
+        dataType: 'json',
+        contentType: "application/json",
+        data: JSON.stringify(objinfo),
+        success: function (res) {
+            var responseData = res.responseData;
+            for (var i in responseData) {
+
+                var spec1lent = res.responseData[i].productDetail.spec1.length - 1;
+
+                html += '<div href="#" class="item" data-productId="' + responseData[i].productId + '">';
+                html += '<a class="item-click">';
+                html += '<img src="' + responseData[i].firstUrl + '">';
+                html += '<p class="box"> ' + responseData[i].productName + '</p>';
+                html += '<del>￥' + responseData[i].price + '</del> ';
+
+                if (responseData[i].productDetail.spec1[0].colPrice == responseData[i].productDetail.spec1[spec1lent].colPrice) {
+                    html += '<span>￥' + responseData[i].productDetail.spec1[0].colPrice + '</span>';
+                } else {
+                    html += '<span>￥' + responseData[i].productDetail.spec1[0].colPrice + '~' + responseData[i].productDetail.spec1[spec1lent].colPrice + '</span> ';
+                }
+
+                html += '</a>';
+                html += '<div class="item-hover">';
+                html += '<img src="img/1_1_1.png" alt="" srcset="">';
+                html += '<p>扫一扫</p>';
+                html += '<p>轻松购</p>';
+                html += '</div>';
+                html += '</div>';
+            }
+            $(".con-yjsh-sp").html(html)
+
+            //截取字符
+            $('.box').each(function (i, item) {
+                var newstr;
+
+                console.log(newstr)
+                console.log(item)
+                newstr = $(item).html().substr(0, 20);
+                if (newstr.length <= 3) {
+                    return
+                }
+                $(item).html(newstr + '...');
+            })
+        }
+    });
+}
 

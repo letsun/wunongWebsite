@@ -162,7 +162,27 @@ textarea {
                 float: left;
             }
 
-            .header-nav-item:first-child {
+            .a1 {
+
+                text-align: center;
+                font-weight: 400;
+                
+                a {
+                    font-size: 20px;
+                    color: #ffffff;
+                    border-bottom: #ffffff 4px solid;
+    
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    padding-bottom: 8px;
+    
+                    font-weight: bold;
+    
+                }
+            }
+
+
+            .a2 {
                 width: 20%;
                 text-align: center;
                 font-weight: 400;
@@ -173,8 +193,6 @@ textarea {
                     border-bottom: #ffffff 4px solid;
                     width: 80px;
                     padding-bottom: 8px;
-                    padding-left: 20px;
-                    padding-right: 20px;
                     font-weight: bold;
 
                 }
@@ -218,101 +236,59 @@ textarea {
 
 }
 
+.nav{
+    width: 1200px;
+    margin: auto;
+    font-size: 16px;
+    color: #666;
+    margin-top: 60px;
 
+    span {
+        color: #FE8901;
+    }
+}
 .content {
     margin: auto;
     width: 1200px;
     position: relative;
 
+    .content-title{
+        padding-top: 45px;
+        color: #333;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
     .content-text {
-        font-size: 16px;
-        color: #666;
-        margin-top: 60px;
-
-        span {
-            color: #FE8901;
-        }
-    }
-
-    .content-nav {
-        margin-top: 30px;
-        img {
-            margin: auto;
-        }
-    }
-    .content-con:hover {
-        box-shadow:3px 5px 27px 0px rgba(0, 0, 0, 0.3);
-    }
-    .content-con {
-        margin-top: 50px;
-        height: 310px;
+        padding-top: 25px;
         width: 1200px;
-        display: flex;
-        
-        
-        .content-con-left {
-            width: 590px;
-            height: 310px;
+        float: left;
+        .content-text-item{
             float: left;
-
-            img{
-                width: 590px;
-                height: 310px; 
-            }
-        }
-        .content-con-right {
-            float: left;
-            width: 610 - 65 - 37px;
-            padding: 60px 65px 0px 37px;
-
-            .content-con-right-title{
-                font-size:20px;
-                font-weight: bolder;
-                overflow: hidden;
-                text-overflow:ellipsis;
-                white-space: nowrap;
-                width: 530px;
-            }
-
-            .content-con-right-con {
-                margin-top: 20px;
-                display: -webkit-box;
-                -webkit-box-orient: vertical;
-                line-height: 24px;
-                -webkit-line-clamp: 4;
-                overflow: hidden;
-                // width: 518px;
-                color: #666;
-                font-size: 14px;
-
-                span {
-                    font-size: 14px;
-                    color:#FE8901;
-                }
-            }
-
-            .content-con-right-bottom {
-                margin-top: 20px;
-                color: #666;
-                font-size: 14px;
-                text-align: right;
-                padding-right: 10px;
-            }
+            padding-right: 35px;
+            color: #666;
+            font-size: 14px;
         }
     }
 
-    .content-jiazai {
-        margin: auto;
-        margin-top: 50px;
-        width:92px;
-        border:1px solid rgba(153,153,153,1);
-        border-radius:4px; 
-        font-size: 16px;   
-        color: #999999;  
-        line-height: 30px;
-        text-align: center;
+    .content-cont {
+        width: 1200px;
+        float: left;
+        border-top: 1px #666666 solid;
+        padding-top: 45px;
+        padding-bottom: 45px;
+
+        img {
+            display: block;
+            margin: auto;
+            max-width: 800px;
+            padding-top: 45px;
+            padding-bottom: 45px;
+        }
     }
 }
+
+
 
 .footer {
     color: #333333;
@@ -425,7 +401,6 @@ textarea {
     }
 
 }
-
 .fudong {
     position: fixed;
     right: 0px;

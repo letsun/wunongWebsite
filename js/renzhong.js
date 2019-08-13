@@ -1,5 +1,5 @@
 
-var type = 5;
+var type = 3;
 $(function () {
     $.ajax({
         url: "http://manage.wnw108.com/w/api/news/list",
