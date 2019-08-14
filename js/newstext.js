@@ -13,25 +13,25 @@ $(function () {
 
 
         if(type ==1 ){
-            html += '<a href="enindex.html"> Home</a>><a href="enhomeDepot.html"> 物农家仓</a>><span class="news_title"> </span>';
+            html += '<a href="enindex.html"> 首页</a>><a href="homeDepot.html"> 物农家仓</a>><span class="news_title"> </span>';
             
             $(".header-en-a2").attr("href",'homeDepot.html')
             $(".header-en-a1").attr("href",'enhomeDepot.html')
             $('.header-nav-item:first-child ').addClass('a1')
         }else if(type ==2){
-            html += '<a href="enindex.html"> Home</a>><a href="enadoption.html"> 物农认养</a>><span class="news_title"> </span>';
+            html += '<a href="enindex.html"> 首页</a>><a href="adoption.html"> 物农认养</a>><span class="news_title"> </span>';
 
             $(".header-en-a2").attr("href",'adoption.html')
             $(".header-en-a1").attr("href",'enadoption.html')
             $('.header-nav-item:first-child ').addClass('a1')
         }else if(type ==3){
-            html += '<a href="enindex.html"> Home</a>><a href="enrenzhong.html"> 物农认种</a>><span class="news_title"> </span>';
+            html += '<a href="enindex.html"> 首页</a>><a href="renzhong.html"> 物农认种</a>><span class="news_title"> </span>';
 
             $(".header-en-a2").attr("href",'renzhong.html')
             $(".header-en-a1").attr("href",'enrenzhong.html')
             $('.header-nav-item:first-child ').addClass('a1')
         }else{
-            html += '<a href="ennews.html"> 新闻资讯</a>><span class="news_title"> </span>';
+            html += '<a href="news.html"> 新闻资讯</a>><span class="news_title"> </span>';
 
             $(".header-en-a2").attr("href",'news.html')
             $(".header-en-a1").attr("href",'ennews.html')

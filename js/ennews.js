@@ -11,7 +11,7 @@ $(function () {
 
             type:type  //类型
         },
-        contentType: "application/json",
+        
         success: function (res) {
             var html = '';
 
@@ -22,8 +22,12 @@ $(function () {
                     html += '<div class="content-con-left">';
                     html += '<img src="' + newlist[i].news_img + '" alt="" srcset="">';
                     html += '</div>';
+                    if (newlist[i].desc_type == 1){
+                        html += '<a href=" '+newlist[i].desc_href+'" class="content-con-right">';
+                    }else{
+                        html += '<a href="ennewstext.html?newsId=' + newlist[i].news_id +'&type=' + type + '" class="content-con-right">';
+                    }
 
-                    html += '<a href="ennewstext.html?newsId=' + newlist[i].news_id +'&type=' + type + '" class="content-con-right">';
                     html += '<div class="content-con-right-title"> ' + newlist[i].news_title + '</div>';
 
                     html += '<div class="content-con-right-con ">' + newlist[i].news_desc + '</div>';

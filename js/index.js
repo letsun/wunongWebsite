@@ -1,7 +1,8 @@
+console.log(111)
 $(function () {
     window.onload = function () {
         setInterval(function () {
-            window.location.reload()
+            window.location.reload();
         }, 600000)
     }
     //获去分类id
