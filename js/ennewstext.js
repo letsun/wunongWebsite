@@ -49,7 +49,6 @@ $(function () {
             data: {
                 langType: 0  //0中文  1英文
             },
-            contentType: "application/json",
             success: function (res) {
 
                 if (res.code == 200) {
@@ -57,6 +56,7 @@ $(function () {
                     var news_content = res.result.news_content //资讯内容
                     var news_title = res.result.news_title //资讯标题
                     var pub_time = res.result.pub_time //资讯发布时间
+                    var browse_cnt = res.result.browse_cnt //浏览次数
 
                     $('.news_title').html(news_title)
 
@@ -64,6 +64,8 @@ $(function () {
                     $('.pub_time').html(pub_time)
                     $('.news_title').html(news_title)
                     $('#news_content').html(news_content)
+
+                    $('.browse_cnt').html(browse_cnt)
 
 
 

@@ -279,14 +279,13 @@ textarea {
     .content-cont {
         width: 1200px;
         float: left;
-        border-top: 1px #666666 solid;
+        border-top: 1px #6666 solid;
         padding-top: 45px;
         padding-bottom: 45px;
 
         img {
             display: block;
             margin: auto;
-            max-width: 800px;
             padding-top: 45px;
             padding-bottom: 45px;
         }
@@ -296,38 +295,41 @@ textarea {
 
 
 .footer {
+    margin-top: 90px;
     color: #333333;
     float: left;
     width: 100%;
+
     .footer-con {
         width: 1200px;
         margin: auto;
         display: flex;
         padding-top: 90px;
 
-
         .footer-con-lxwm {
-            width: 40%;
+            width: 35%;
             float: left;
             .footer-con-lxwm-header {
                 font-weight: bolder;
                 font-size: 22px;
                 height: 70px;
-                
+
             }
 
             .footer-con-lxwm-con {
                 display: flex;
                 font-size: 16px;
                 float: left;
+                width: 100%;
 
                 .footer-con-lxwm-con-left {
-                    width: 80px;
+                    // width: 80px;
+                    font-weight: bold;
                     float: left;
                 }
 
                 .footer-con-lxwm-con-right {
-                    width: 280px;
+                    // width: 280px;
                     float: left;
                     // a {
                     //     border-bottom: 1px solid blue; 
@@ -336,31 +338,42 @@ textarea {
                 }
             }
 
-            .footer-con-lxwm-con:last-child {
-                line-height: 25px;
-                padding-top: 5px;
+            .footer-con-lxwm-address {
+                font-size: 16px;
+
+                p:first-child {
+                    font-weight: bold;
+                }
             }
         }
 
         .footer-con-gzh {
-            width: 35%;
+            width: 30%;
             float: left;
             .footer-con-gzh-header {
                 font-weight: bolder;
                 font-size: 22px;
                 height: 70px;
-                margin-left: 6px;
+                text-align: center;
+            }
+
+            .footer-con-gzh-con {
+                img {
+                    margin: auto;
+                }
+               
             }
         }
 
         .footer-con-kefu {
-            width: 25%;
             float: left;
+            width: 26%;
+            margin-left: 9%;
             .footer-con-kefu-header {
+                padding-left: 6px;
                 font-weight: bolder;
                 font-size: 22px;
                 height: 70px;
-                padding-left: 6px;
             }
 
             .footer-con-kefu-con {
@@ -368,7 +381,11 @@ textarea {
                 p {
                     font-size: 16px;
                 }
+                p:first-child {
+                    font-weight: bold;
+                }
             }
+
 
             .footer-con-kefu-bottom {
                 .footer-con-kefu-bottom-item {
@@ -379,8 +396,9 @@ textarea {
                         margin: auto;
                     }
                     p {
-                        font-size: 16px;
-                        
+                        font-size: 14px;
+                        line-height: 14px;
+                        padding-top: 10px;
                     }
                 }
             }
@@ -399,13 +417,13 @@ textarea {
         text-align: center;
         background: #201F1F;
         width: 100%;
-
         sup {
             font-size: 14px;
         }
     }
 
 }
+
 .fudong {
     position: fixed;
     right: 0px;
@@ -413,7 +431,7 @@ textarea {
     z-index: 999;
 
     img {
-        height: 210px;
-        width: 200px;
+        height: 300px;
+        width: 210px;
     }
 }

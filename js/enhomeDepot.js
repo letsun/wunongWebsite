@@ -44,8 +44,8 @@ $(function () {
                 
                 $('.content-con-right-con').each(function (i, item) {
                     var newstr;
-                    if ($(item).html().length > 120) {
-                        newstr = $(item).html().substr(0, 120);
+                    if ($(item).html().length > 300) {
+                        newstr = $(item).html().substr(0, 300);
                         $(item).html(newstr + '...');
                     } 
                 })

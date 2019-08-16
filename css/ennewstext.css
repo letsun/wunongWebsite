@@ -216,18 +216,18 @@ textarea {
 .content .content-cont {
   width: 1200px;
   float: left;
-  border-top: 1px #666666 solid;
+  border-top: 1px #6666 solid;
   padding-top: 45px;
   padding-bottom: 45px;
 }
 .content .content-cont img {
   display: block;
   margin: auto;
-  max-width: 800px;
   padding-top: 45px;
   padding-bottom: 45px;
 }
 .footer {
+  margin-top: 90px;
   color: #333333;
   float: left;
   width: 100%;
@@ -239,7 +239,7 @@ textarea {
   padding-top: 90px;
 }
 .footer .footer-con .footer-con-lxwm {
-  width: 40%;
+  width: 35%;
   float: left;
 }
 .footer .footer-con .footer-con-lxwm .footer-con-lxwm-header {
@@ -251,44 +251,53 @@ textarea {
   display: flex;
   font-size: 16px;
   float: left;
+  width: 100%;
 }
 .footer .footer-con .footer-con-lxwm .footer-con-lxwm-con .footer-con-lxwm-con-left {
-  width: 80px;
+  font-weight: bold;
   float: left;
 }
 .footer .footer-con .footer-con-lxwm .footer-con-lxwm-con .footer-con-lxwm-con-right {
-  width: 280px;
   float: left;
 }
-.footer .footer-con .footer-con-lxwm .footer-con-lxwm-con:last-child {
-  line-height: 25px;
-  padding-top: 5px;
+.footer .footer-con .footer-con-lxwm .footer-con-lxwm-address {
+  font-size: 16px;
+}
+.footer .footer-con .footer-con-lxwm .footer-con-lxwm-address p:first-child {
+  font-weight: bold;
 }
 .footer .footer-con .footer-con-gzh {
-  width: 35%;
+  width: 30%;
   float: left;
 }
 .footer .footer-con .footer-con-gzh .footer-con-gzh-header {
   font-weight: bolder;
   font-size: 22px;
   height: 70px;
-  margin-left: 6px;
+  text-align: center;
+}
+.footer .footer-con .footer-con-gzh .footer-con-gzh-con img {
+  margin: auto;
 }
 .footer .footer-con .footer-con-kefu {
-  width: 25%;
   float: left;
+  width: 26%;
+  margin-left: 9%;
 }
 .footer .footer-con .footer-con-kefu .footer-con-kefu-header {
+  padding-left: 6px;
   font-weight: bolder;
   font-size: 22px;
   height: 70px;
-  padding-left: 6px;
 }
 .footer .footer-con .footer-con-kefu .footer-con-kefu-con {
   padding-left: 6px;
 }
 .footer .footer-con .footer-con-kefu .footer-con-kefu-con p {
   font-size: 16px;
+}
+.footer .footer-con .footer-con-kefu .footer-con-kefu-con p:first-child {
+  font-weight: bold;
 }
 .footer .footer-con .footer-con-kefu .footer-con-kefu-bottom .footer-con-kefu-bottom-item {
   width: 33.3333%;
@@ -299,7 +308,9 @@ textarea {
   margin: auto;
 }
 .footer .footer-con .footer-con-kefu .footer-con-kefu-bottom .footer-con-kefu-bottom-item p {
-  font-size: 16px;
+  font-size: 14px;
+  line-height: 14px;
+  padding-top: 10px;
 }
 .footer .footer-text {
   float: left;
@@ -321,6 +332,6 @@ textarea {
   z-index: 999;
 }
 .fudong img {
-  height: 210px;
-  width: 200px;
+  height: 300px;
+  width: 210px;
 }
