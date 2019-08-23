@@ -11,7 +11,7 @@ $(function () {
         dataType: 'json',
         contentType: "application/json",
         success: function (res) {
-            getId(res.responseData[0].id)
+            getId(14)
 
 
         }

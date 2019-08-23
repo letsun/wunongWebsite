@@ -12,10 +12,9 @@ $(function () {
         dataType: 'json',
         contentType: "application/json",
         success: function (res) {
-            getId(res.responseData[0].id)
-
-            getId1(res.responseData[1].id)
-            getId2(res.responseData[2].id)
+            getId(14);
+            getId1(15);
+            getId2(16);
         }
     });
 

@@ -12,9 +12,9 @@ $(function () {
         dataType: 'json',
         contentType: "application/json",
         success: function (res) {
-            getId(res.responseData[0].id)
-            getId1(res.responseData[1].id)
-            getId2(res.responseData[2].id)
+            getId(14);
+            getId1(15);
+            getId2(16);
         }
     });
 
@@ -167,7 +167,6 @@ function getId1(id) {
 
                 var spec1lent = res.responseData[i].productDetail.spec1.length - 1;
 
-                console.log(responseData[3].productDetail.spec1.length)
                 // console.log(spec1lent)
 
                 html += '<div href="#" class="item" data-productId="' + responseData[i].productId + '">';
@@ -228,7 +227,6 @@ function getId2(id) {
 
                 var spec1lent = res.responseData[i].productDetail.spec1.length - 1;
 
-                console.log(responseData[3].productDetail.spec1.length)
                 // console.log(spec1lent)
 
                 html += '<div href="#" class="item" data-productId="' + responseData[i].productId + '">';
