@@ -223,11 +223,8 @@ textarea {
 .content .content-con .content-con-hader img {
   margin: auto;
 }
-.content .content-con .content-con-con {
-  display: flex;
-  margin-top: 50px;
-}
 .content .content-con .content-con-con .content-con-con-item {
+  padding-top: 50px;
   width: 25%;
   float: left;
 }
