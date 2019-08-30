@@ -1,4 +1,3 @@
-console.log(111)
 $(function () {
     window.onload = function () {
         setInterval(function () {

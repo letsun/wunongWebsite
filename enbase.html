@@ -13,6 +13,8 @@
     <link rel="icon" href="imgen/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/enbase.css">
 
+
+    <script src="js/lib/jquery-2.2.2.min.js"></script>
 </head>
 
 <body>
@@ -57,10 +59,12 @@
 
         <div class="content">
             <div class="content-header">
-                <p>Wunong Small Goals(2019-2020)</p>
-                <p>All over the country, </p>
-                <p>supporting cultivation and breeding bases exceed <span>10,000</span> Mu</p>
-                <p>( <span>1000+</span> mu already )</p>
+                <!-- <p>Wunong Small Goals(2019-2020)</p>
+                <p>All over the country, </p> -->
+                <p></p>
+                <p>2019,Wunong has more than <span>20,000</span> Mu</p> acres of supporting planting bases across the
+                country.
+                <!-- <p>( <span>1000+</span> mu already )</p> -->
             </div>
 
             <div class="content-con">
@@ -71,23 +75,25 @@
                 <div class="content-con-con">
                     <div class="content-con-con-item">
                         <img src="img/8_5.png" alt="">
+                        <p>Wunong Claim planting Volcanic rock rice planting base</p>
                     </div>
+
                     <div class="content-con-con-item">
-                        <img src="img/8_6.png" alt="">
+                        <img src="img/8_11.png" alt="">
+                        <p>Wunong Claim planting Yangxian Black Rice Base</p>
+                        
                     </div>
                     <div class="content-con-con-item">
                         <img src="img/8_7.png" alt="">
+                        <p>Wunong Claim planting Shandong Golden Sunflower Planting Cooperation Base</p>
+                    </div>
+                    <div class="content-con-con-item">
+                        <img src="img/8_10.png" alt="">
+                        <p>Wunong Claim Rice fat organic millet base</p>
                     </div>
                     <div class="content-con-con-item">
                         <img src="img/8_8.png" alt="">
-                    </div>
-
-
-                    <div class="content-con-con-item">
-                        <img src="img/8_10.png" alt="">
-                    </div>
-                    <div class="content-con-con-item">
-                        <img src="img/8_11.png" alt="">
+                        <p>Wunong Claim Aquaculture Gansu Tongyu County Chicken Cooperative Base</p>
                     </div>
                 </div>
             </div>
@@ -160,6 +166,16 @@
         </div>
 
     </div>
+
+    <script>
+        $('.content-con-con-item p').each(function (i, item) {
+            var newstr;
+            if ($(item).html().length > 40) {
+                newstr = $(item).html().substr(0, 40);
+                $(item).html(newstr + '...');
+            }
+        })
+    </script>
 
 </body>
 

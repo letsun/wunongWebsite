@@ -230,6 +230,12 @@ textarea {
 }
 .content .content-con .content-con-con .content-con-con-item img {
   margin: auto;
+  padding-bottom: 20px;
+}
+.content .content-con .content-con-con .content-con-con-item p {
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px;
 }
 .footer {
   color: #333333;
