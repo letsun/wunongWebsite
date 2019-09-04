@@ -1,5 +1,6 @@
 var ip =" https://life.wnw108.com";
-var ip1 ="https://manage.wnw108.com"
+var ip1 ="https://manage.wnw108.com"; //线上
+//var ip1 ="http://192.168.1.105:8081"; //测试
 
 var api={
     getPrefectureByAreaType : ip +'/business/product/getPrefectureByAreaType?areaType=1',   //获取商品类型   
