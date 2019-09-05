@@ -149,6 +149,7 @@ textarea {
   margin: auto;
 }
 .container .dpjd .dpjd-banner {
+  display: block;
   padding: 20px 0px 20px 0px;
 }
 .container .dpjd .dpjd-banner img {

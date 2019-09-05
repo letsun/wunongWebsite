@@ -17,6 +17,20 @@
     <script src="js/lib/jquery.min.js"></script>
     <script src="js/api.js"></script>
     <script src="js/live.js"></script>
+
+    <script>
+        if (window.screen.width < 768) {
+            window.location.href = "phonelive.html";
+        }
+
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?39f201d12ec911f9203c5d4e639ca4c0";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
 </head>
 
 <body>
@@ -58,7 +72,7 @@
                 <img src="img/5_1.png" alt="">
             </div>
 
-            <div  class="content-con">
+            <div class="content-con">
                 <a id="live_href" href="">
                     <img class="content-con-img" id="banner_img" src="img/5_2.png" alt="" srcset="">
                     <!-- <div class="content-con-ewm">
