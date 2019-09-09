@@ -8,4 +8,12 @@ $(function () {
     $('.sidebar-cona').on('click', function () {
         $('.sidebar').fadeOut()
     })
+
+
+
+
+    //关闭侧边栏
+    $('.sidebar-conb-header').on('click', function () {
+        $('.sidebar').fadeOut()
+    })
 })

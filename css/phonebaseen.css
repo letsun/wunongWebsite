@@ -210,6 +210,13 @@ textarea {
   bottom: 0px;
   width: 255px;
 }
+.container .sidebar .sidebar-conb .sidebar-conb-header {
+  padding: 30px;
+  text-align: right;
+}
+.container .sidebar .sidebar-conb .sidebar-conb-header img {
+  display: inline-block;
+}
 .container .sidebar .sidebar-conb .sidebar-conb-item {
   display: flex;
   margin: 0px 30px 0px 30px;
@@ -228,8 +235,7 @@ textarea {
   margin: auto;
   width: 130px;
 }
-.container .sidebar .sidebar-conb .sidebar-conb-item:first-child {
-  padding-top: 120px;
+.container .sidebar .sidebar-conb .sidebar-conb-item:nth-child(2) {
   border-top: none;
 }
 .container .sidebar .sidebar-conb .sidebar-conb-gzh {
