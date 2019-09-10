@@ -32,23 +32,6 @@
             <img src="phoneimg/1_63.png">
         </div>
         <div class="content"></div>
-
-        <div class="footer"></div>
-
-        <a href="tel:400-808-4108" class="tfooter">
-            <div class="tfooter-left">
-                <img class="tfooter-left-img" src="phoneimg/1_18.png">
-                <span class="tfooter-left-text">电话咨询</span>
-            </div>
-            <!-- <div class="tfooter-span">
-                    <span></span>
-                </div>
-                <a class="tfooter-right">
-                    <img class="tfooter-right-img" src="phoneimg/1_19.png">
-                    <span class="tfooter-right-text">微信咨询</span>
-                </a> -->
-        </a>
-
         <!-- 侧边栏 -->
         <div class="sidebar">
             <div class="sidebar-cona">
@@ -86,59 +69,62 @@
                 </div>
 
                 <div class="sidebar-conb-en">
-                    [ <a class="a1" href="phoneindex.html">中文</a> <span class="span"></span> <a class="a2"
-                        href="phoneindexen.html">English</a> ]
+                    [ <a class="a1" href="phoneadoption.html">中文</a> <span class="span"></span> <a class="a2"
+                        href="phoneadoptionen.html">English</a> ]
                 </div>
             </div>
         </div>
+        <!-- 底部 -->
+        <div id="footer"></div>
     </div>
 
 
 
     <script>
+
+        var type = 2;
         $(function () {
-            var type = 2;
-            $(function () {
-                $.ajax({
-                    url: api.newlist,
-                    type: 'POST',
-                    dataType: 'json',
+            $('#footer').load('phonefooter.html')
+            $.ajax({
+                url: api.newlist,
+                type: 'POST',
+                dataType: 'json',
 
-                    data: {
-                        langType: 0,  //0中文  1English
-                        type: type  //类型
-                    },
-                    success: function (res) {
-                        var html = '';
+                data: {
+                    langType: 0,  //0中文  1English
+                    type: type  //类型
+                },
+                success: function (res) {
+                    var html = '';
 
-                        if (res.code == 200) {
-                            var newlist = res.result;
-                            for (var i in newlist) {
-                                if (newlist[i].desc_type == 1) {
-                                    html += '<a href=" ' + newlist[i].desc_href + '" class="content-item">';
-                                } else {
-                                    html += '<a href="phonenewstext.html?newsId=' + newlist[i].news_id + '&type=' + type + '" class="content-item">';
-                                }
-                                // html += ' <a class="content-item">';
-                                html += '  <div class="content-item-left">';
-                                html += ' <div class="content-item-left-title">' + newlist[i].news_title + '</div>';
-                                html += ' <div class="content-item-left-bottom">发布时间：' + newlist[i].pub_time + '</div>';
-                                html += ' </div>';
-                                html += ' <div class="content-item-right"><img src="' + newlist[i].news_img + '"></div>';
-                                html += ' </a>';
-
+                    if (res.code == 200) {
+                        var newlist = res.result;
+                        for (var i in newlist) {
+                            if (newlist[i].desc_type == 1) {
+                                html += '<a href=" ' + newlist[i].desc_href + '" class="content-item">';
+                            } else {
+                                html += '<a href="phonenewstext.html?newsId=' + newlist[i].news_id + '&type=' + type + '" class="content-item">';
                             }
-                            $('.content').html(html)
+                            // html += ' <a class="content-item">';
+                            html += '  <div class="content-item-left">';
+                            html += ' <div class="content-item-left-title">' + newlist[i].news_title + '</div>';
+                            html += ' <div class="content-item-left-bottom">发布时间：' + newlist[i].pub_time + '</div>';
+                            html += ' </div>';
+                            html += ' <div class="content-item-right"><img src="' + newlist[i].news_img + '"></div>';
+                            html += ' </a>';
+
                         }
-                    },
-                    error: function (res) {
-                        console.log(JSON.stringify(res));
+                        $('.content').html(html)
                     }
-                });
+                },
+                error: function (res) {
+                    console.log(JSON.stringify(res));
+                }
+            });
 
 
-            })
         })
+
 
     </script>
 

@@ -134,22 +134,6 @@
                 <img src="phoneenimg/1_38.png">
             </div>
         </div>
-
-        <div class="footer"></div>
-        <a href="tel:400-808-4108" class="tfooter">
-            <div class="tfooter-left">
-                <img class="tfooter-left-img" src="phoneimg/1_18.png">
-                <span class="tfooter-left-text">电话咨询</span>
-            </div>
-            <!-- <div class="tfooter-span">
-                    <span></span>
-                </div>
-                <a class="tfooter-right">
-                    <img class="tfooter-right-img" src="phoneimg/1_19.png">
-                    <span class="tfooter-right-text">微信咨询</span>
-                </a> -->
-        </a>
-
         <!-- 侧边栏 -->
         <div class="sidebar">
             <div class="sidebar-cona">
@@ -192,13 +176,15 @@
                 </div>
             </div>
         </div>
+        <!-- 底部 -->
+        <div id="footer"></div>
     </div>
 
 
 
     <script>
         $(function () {
-
+            $('#footer').load('phonefooteren.html')
             var swiper = new Swiper('.swiper-container', {
                 slidesPerView: 1.4,
                 centeredSlides: true,
