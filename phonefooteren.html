@@ -68,8 +68,77 @@
 </div>
 
 
+<div class="tfootera"></div>
+
+<div class="footera">
+    <a href="http://life.wnw108.com/customer#/shopHome" class="footera-left">
+        <div class="footera-left-img"><img src="phoneimg/1_18.png"></div>
+
+        <div class="footera-left-text">物农商城</div>
+
+    </a>
+
+    <span class="footera-span"></span>
+    <div class="footera-right">
+
+        <div class="footera-right-img"><img src="phoneimg/1_19.png"></div>
+        <div class="footera-right-text">物农公众号</div>
+    </div>
+</div>
+
+<div class="footera1">
+    <img class="footera1-img" src="phoneimg/1_19.png">
+    <span class="footera1-span">物农公众号</span>
+
+</div>
+<!-- 微信公众号弹窗 -->
+
+<div class="gzh">
+
+    <div class="gzh-con">
+        <div class="gzh-con-con">
+            <img class="gzh-con-img" src="phoneimg/1_35.png">
+        </div>
 
 
+        <div class="gzh-gb"><img src="phoneimg/1_76.png"></div>
+    </div>
+
+</div>
 
 
+<script>
+    $(function () {
 
+        $('.footera-right').on('click', function () {
+            $('.gzh').fadeIn()
+        })
+
+
+        $('.footera1').on('click', function () {
+            $('.gzh').fadeIn()
+        })
+        $('.gzh-gb').on('click', function () {
+            $('.gzh').hide()
+        })
+
+        var req = is_weixn();
+        function is_weixn() {
+            var ua = navigator.userAgent.toLowerCase();
+            if (ua.match(/MicroMessenger/i) == "micromessenger") {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        //true为微信
+        if (req == true) {
+            $('.footera').show()
+        } else {
+
+            $('.footera1').show()
+
+        }
+    })
+</script>

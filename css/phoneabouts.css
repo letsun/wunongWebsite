@@ -102,10 +102,18 @@ textarea {
   height: 100%;
   width: 100%;
 }
+.container .theader {
+  height: 85px;
+}
 .container .header {
   height: 85px;
   position: relative;
   background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 6;
 }
 .container .header .header-img1 {
   position: absolute;
@@ -231,7 +239,7 @@ textarea {
   padding: 30px;
   display: flex;
   position: absolute;
-  bottom: 0;
+  bottom: 100px;
   left: 0;
   right: 0;
 }
@@ -361,4 +369,105 @@ textarea {
 }
 .sidebar .sidebar-conb .sidebar-conb-en .a2 {
   padding: 0px 5px 0px 5px;
+}
+.tfootera {
+  height: 100px;
+}
+.footera {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 6;
+  background: #fe8908;
+  line-height: 100px;
+  color: #fff;
+  font-size: 26px;
+  display: none;
+}
+.footera .footera-left {
+  width: 49%;
+  display: flex;
+  float: left;
+}
+.footera .footera-left img {
+  height: 49px;
+  width: 49px;
+  padding-top: 22px;
+  padding-left: 70px;
+  padding-right: 20px;
+}
+.footera .footera-span {
+  float: left;
+  width: 1%;
+  height: 10px;
+  border-right: 1px #fff solid;
+  height: 26px;
+  margin-top: 36px;
+}
+.footera .footera-right {
+  float: left;
+  display: flex;
+  width: 49.5%;
+}
+.footera .footera-right img {
+  height: 49px;
+  width: 49px;
+  padding-top: 22px;
+  padding-left: 70px;
+  padding-right: 20px;
+}
+.gzh {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+  display: none;
+  background: rgba(0, 0, 0, 0.4);
+}
+.gzh .gzh-con {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.gzh .gzh-con .gzh-con-con {
+  background: #fff;
+  border: 10px solid #fe8908;
+}
+.gzh .gzh-con .gzh-con-img {
+  height: 300px;
+}
+.gzh .gzh-con .gzh-gb {
+  padding-top: 30px;
+}
+.gzh .gzh-con .gzh-gb img {
+  margin: auto;
+}
+.footera1 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 6;
+  background: #fe8908;
+  display: flex;
+  line-height: 100px;
+  color: #fff;
+  font-size: 26px;
+  height: 100px;
+  display: none;
+}
+.footera1 .footera1-img {
+  height: 49px;
+  width: 49px;
+  position: absolute;
+  left: 220px;
+  top: 24px;
+}
+.footera1 .footera1-span {
+  position: absolute;
+  left: 290px;
 }
