@@ -251,6 +251,77 @@ textarea {
 .cona .con .con-nav .con-nav-item:hover {
   box-shadow: 0px 0px 10px 0px #aaa;
 }
+.cona .con .con-yjzg {
+  float: left;
+}
+.cona .con .con-yjzg .con-yjzg-nav {
+  margin: 70px 0 30px 0;
+}
+.cona .con .con-yjzg .con-yjzg-sp {
+  margin-top: 20px;
+  display: flex;
+  position: relative;
+}
+.cona .con .con-yjzg .con-yjzg-sp .item {
+  width: 16.6666%;
+  font-size: 16px;
+  position: relative;
+  float: left;
+}
+.cona .con .con-yjzg .con-yjzg-sp .item .item-click img {
+  margin: auto;
+  max-width: 178px;
+  max-height: 178px;
+}
+.cona .con .con-yjzg .con-yjzg-sp .item .item-click p {
+  padding-top: 10px;
+  line-height: normal;
+  color: #333333;
+  width: 160px;
+  margin: auto;
+  margin-left: 10px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-size: 16px;
+  height: 43px;
+}
+.cona .con .con-yjzg .con-yjzg-sp .item .item-click del {
+  color: #666;
+  font-size: 12px;
+  margin-left: 10px;
+}
+.cona .con .con-yjzg .con-yjzg-sp .item .item-click span {
+  color: #ef000e;
+  font-weight: bold;
+}
+.cona .con .con-yjzg .con-yjzg-sp .item .item-hover {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0;
+  bottom: 0;
+  display: none;
+  height: 260px;
+  width: 190px;
+  box-shadow: 0px 5px 5px 5px #ddd;
+  background: #fff;
+}
+.cona .con .con-yjzg .con-yjzg-sp .item .item-hover img {
+  padding-top: 20px;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  padding-bottom: 10px;
+}
+.cona .con .con-yjzg .con-yjzg-sp .item .item-hover p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  color: #ff8b04;
+  line-height: 30px;
+}
 .cona .con .con-dpjd {
   float: left;
 }

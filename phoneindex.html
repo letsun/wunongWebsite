@@ -55,6 +55,24 @@
             <a href="phonelive.html" class="nav-item"><img src="phoneimg/1_7.png"></a>
         </div>
 
+        <!-- 有机中国行 -->
+        <div class="dpjd">
+            <div class="dpjd-nav">
+                <img src="phoneimg/1_77.png">
+            </div>
+
+            <a href="http://life.wnw108.com/customer#/areaPage/5,38,%25E7%2589%25A9%25E5%2586%259C%25E7%25BD%2591%2520%25C2%25B7%2520%25E6%259C%2589%25E6%259C%25BA%25E4%25B8%25AD%25E5%259B%25BD%25E8%25A1%258C"
+                class="dpjd-banner">
+                <img src="phoneimg/1_78.png">
+            </a>
+
+
+            <div class="dpjd-con" id='yjzg'>
+
+            </div>
+        </div>
+
+
 
         <!-- 大牌驾到 -->
         <div class="dpjd">
@@ -163,6 +181,49 @@
                 autoplay: 2500,
                 autoplayDisableOnInteraction: false,	//滑动后不会停止继续轮播
                 pagination: '.swiper-pagination',
+            });
+
+            //中国有机行
+            var objinfod = {
+                pageNo: 0,
+                pageSize: 6,
+                orderBy: 'asc',
+                orderType: 'price',
+                requestData: {
+                    areaType: 5,
+                    id: 38,
+                }
+            }
+            var html3 = '';
+            $.ajax({
+                url: api.getPrefectureProductList,
+                type: 'POST',
+                dataType: 'json',
+                contentType: "application/json",
+                data: JSON.stringify(objinfod),
+                success: function (res) {
+                    var responseData = res.responseData;
+                    for (var i in responseData) {
+                        var spec1lent = res.responseData[i].productDetail.spec1.length - 1;
+                        html3 += '<div class="dpjd-con-item">';
+                        html3 += '<div class="dpjd-con-item-img">';
+                        html3 += '<img src="' + responseData[i].firstUrl + '">';
+                        html3 += '</div>';
+                        html3 += '<div class="dpjd-con-item-title">' + responseData[i].productName + '</div>';
+                        html3 += '<div class="dpj-con-item-bottom">';
+                        html3 += '<del>￥' + responseData[i].price + '</del> ';
+                        if (responseData[i].productDetail.spec1[0].colPrice == responseData[i].productDetail.spec1[spec1lent].colPrice) {
+                            html3 += '<span>￥' + responseData[i].productDetail.spec1[0].colPrice + '</span>';
+                        } else {
+                            html3 += '<span>￥' + responseData[i].productDetail.spec1[0].colPrice + '~' + responseData[i].productDetail.spec1[spec1lent].colPrice + '</span> ';
+                        }
+                        html3 += '<a href="http://life.wnw108.com/customer#/offlineProductDetail/' + responseData[i].productId + '"><img class="dpj-con-item-bottom-img" src="phoneimg/1_12.png"></a>';
+                        html3 += '</div>';
+                        html3 += ' </div>';
+                    }
+                    $("#yjzg").html(html3)
+
+                }
             });
 
 
@@ -302,6 +363,9 @@
 
                 }
             });
+
+
+
         })
 
 

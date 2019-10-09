@@ -5,17 +5,18 @@ $(function () {
         }, 600000)
     }
     //获去分类id
-    $.ajax({
-        url: api.getPrefectureByAreaType,
-        type: 'POST',
-        dataType: 'json',
-        contentType: "application/json",
-        success: function (res) {
-            getId(14);
-            getId1(15);
-            getId2(16);
-        }
-    });
+    // $.ajax({
+    //     url: api.getPrefectureByAreaType,
+    //     type: 'POST',
+    //     dataType: 'json',
+    //     contentType: "application/json",
+    //     success: function (res) {
+            getId(14);  //大牌驾到
+            getId1(15); //新品首发 
+            getId2(16); //新疆卖场
+            getId3(38); //有机中国行
+    //     }
+    // });
 
 
     var swiper = new Swiper('.swiper-container', {
@@ -188,7 +189,7 @@ function getId1(id) {
         }
     });
 }
-//大牌驾到
+//新疆卖场
 function getId2(id) {
     var objinfo = {
         pageNo: 0,
@@ -234,6 +235,66 @@ function getId2(id) {
                 html += '</div>';
             }
             $(".con-yjsh-sp").html(html)
+
+            //截取字符
+            $('.box').each(function (i, item) {
+                if ($(item).html().length>20) {
+                    var newstr = $(item).html().substr(0, 20);
+                    $(item).html(newstr + '...');
+                }
+            })
+        }
+    });
+}
+
+
+
+//有机中国行
+function getId3(id) {
+    var objinfo = {
+        pageNo: 0,
+        pageSize: 6,
+        orderBy: 'asc',
+        orderType: 'price',
+        requestData: {
+            areaType: 5,
+            id: id,
+        }
+    }
+    var html = '';
+    $.ajax({
+        url: api.getPrefectureProductList,
+        type: 'POST',
+        dataType: 'json',
+        contentType: "application/json",
+        data: JSON.stringify(objinfo),
+        success: function (res) {
+            var responseData = res.responseData;
+            for (var i in responseData) {
+
+                var spec1lent = res.responseData[i].productDetail.spec1.length - 1;
+
+                html += '<div href="#" class="item" data-productId="' + responseData[i].productId + '">';
+                html += '<a class="item-click">';
+                html += '<img src="' + responseData[i].firstUrl + '">';
+                html += '<p class="box"> ' + responseData[i].productName + '</p>';
+                html += '<del>￥' + responseData[i].price + '</del> ';
+
+                if (responseData[i].productDetail.spec1[0].colPrice == responseData[i].productDetail.spec1[spec1lent].colPrice) {
+                    html += '<span>￥' + responseData[i].productDetail.spec1[0].colPrice + '</span>';
+                } else {
+                    html += '<span>￥' + responseData[i].productDetail.spec1[0].colPrice + '~' + responseData[i].productDetail.spec1[spec1lent].colPrice + '</span> ';
+                }
+
+                html += '</a>';
+                html += '<div class="item-hover">';
+                html += '<img alt="" srcset="">';
+                html += '<p>扫一扫</p>';
+                html += '<p>轻松购</p>';
+                html += '</div>';
+                html += '</div>';
+            }
+            $(".con-yjzg-sp").html(html)
 
             //截取字符
             $('.box').each(function (i, item) {
