@@ -298,6 +298,7 @@ textarea {
   line-height: 19px;
   color: #666666;
   font-size: 14px;
+  width: 350px;
 }
 .content .module3 .module3-con .module3-con-con .item .item-text ul li {
   margin-left: 35px;
@@ -309,14 +310,6 @@ textarea {
   position: absolute;
   left: -20px;
   font-size: 14px;
-}
-.content .module3 .module3-con .module3-con-con .item:nth-child(1) .item-text,
-.content .module3 .module3-con .module3-con-con .item:nth-child(3) .item-text,
-.content .module3 .module3-con .module3-con-con .item:nth-child(4) .item-text,
-.content .module3 .module3-con .module3-con-con .item:nth-child(6) .item-text {
-  width: 350px;
-  padding-top: 10px;
-  margin: auto;
 }
 .content .module3 .module3-con .module3-con-con .item:nth-child(3n) {
   margin-right: 0px;
