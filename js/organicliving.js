@@ -70,7 +70,7 @@ function getId(id) {
         orderBy: 'asc',
         orderType: 'price',
         requestData: {
-            areaType: 1,
+            areaType: 4,
             id: id,
         }
     }
