@@ -637,11 +637,12 @@ textarea {
   float: left;
   margin-top: 100px;
   color: #ffffff;
-  line-height: 40px;
+  line-height: 30px;
   font-size: 14px;
   text-align: center;
   background: #201F1F;
   width: 100%;
+  padding: 10px 0px;
 }
 .footer .footer-text sup {
   font-size: 14px;
