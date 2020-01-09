@@ -230,6 +230,12 @@ textarea {
   padding-bottom: 45px;
   max-width: 1200px;
 }
+.content .content-cont h4 {
+  padding: 30px 0;
+}
+.content .content-cont p {
+  padding: 10px 50px ;
+}
 .footer {
   margin-top: 90px;
   color: #333333;
