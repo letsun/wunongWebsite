@@ -247,7 +247,7 @@ textarea {
   right: 0px;
   top: 0px;
   bottom: 0px;
-  width: 255px;
+  width: 305px;
 }
 .sidebar .sidebar-conb .sidebar-conb-header {
   padding: 30px;
@@ -259,7 +259,7 @@ textarea {
 .sidebar .sidebar-conb .sidebar-conb-item {
   display: flex;
   margin: 0px 30px 0px 30px;
-  padding: 30px 0px 30px 0px;
+  padding: 25px 0px 25px 0px;
   border-top: 1px #eee solid;
   font-size: 24px;
 }
@@ -272,14 +272,13 @@ textarea {
 }
 .sidebar .sidebar-conb .sidebar-conb-item .sidebar-conb-item-right {
   margin: auto;
-  width: 130px;
+  width: 180px;
 }
 .sidebar .sidebar-conb .sidebar-conb-item:nth-child(2) {
   border-top: none;
 }
 .sidebar .sidebar-conb .sidebar-conb-gzh {
   text-align: center;
-  padding-top: 50px;
 }
 .sidebar .sidebar-conb .sidebar-conb-gzh img {
   margin: auto;
@@ -290,7 +289,7 @@ textarea {
   line-height: 22px;
 }
 .sidebar .sidebar-conb .sidebar-conb-en {
-  padding: 70px 55px;
+  padding: 30px 55px;
   font-size: 20px;
   text-align: center;
   display: flex;
@@ -336,7 +335,7 @@ textarea {
   padding-right: 20px;
 }
 .footera .footera-left .footera-left-text {
-  padding-top: 16px;
+  padding-top: 32px;
   line-height: 30px;
 }
 .footera .footera-span {
@@ -363,7 +362,8 @@ textarea {
   padding-top: 16px;
   line-height: 30px;
 }
-.gzh {
+.gzh,
+.gzh2 {
   position: fixed;
   left: 0;
   right: 0;
@@ -373,23 +373,28 @@ textarea {
   display: none;
   background: rgba(0, 0, 0, 0.4);
 }
-.gzh .gzh-con {
+.gzh .gzh-con,
+.gzh2 .gzh-con {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
-.gzh .gzh-con .gzh-con-con {
+.gzh .gzh-con .gzh-con-con,
+.gzh2 .gzh-con .gzh-con-con {
   background: #fff;
   border: 10px solid #fe8908;
 }
-.gzh .gzh-con .gzh-con-img {
+.gzh .gzh-con .gzh-con-img,
+.gzh2 .gzh-con .gzh-con-img {
   height: 300px;
 }
-.gzh .gzh-con .gzh-gb {
+.gzh .gzh-con .gzh-gb,
+.gzh2 .gzh-con .gzh-gb {
   padding-top: 30px;
 }
-.gzh .gzh-con .gzh-gb img {
+.gzh .gzh-con .gzh-gb img,
+.gzh2 .gzh-con .gzh-gb img {
   margin: auto;
 }
 .footera1 {

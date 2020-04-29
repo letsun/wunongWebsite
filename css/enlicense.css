@@ -124,10 +124,14 @@ textarea {
   float: left;
 }
 .header .header-con .header-nav .header-nav-item {
+  position: relative;
   width: 20%;
   text-align: center;
   font-weight: 400;
   float: left;
+}
+.header .header-con .header-nav .header-nav-item:last-child {
+  width: 34%;
 }
 .header .header-con .header-nav .a1 {
   text-align: center;

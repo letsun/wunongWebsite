@@ -71,10 +71,10 @@
 <div class="tfootera"></div>
 
 <div class="footera">
-    <a href="http://life.wnw108.com/customer#/shopHome" class="footera-left">
+    <a href="javascript:void(0);" id="openApplets" class="footera-left">
         <div class="footera-left-img"><img src="phoneimg/1_18.png"></div>
 
-        <div class="footera-left-text">Wunong superior  products  Mall</div>
+        <div class="footera-left-text">Wunong  Applets</div>
 
     </a>
 
@@ -106,6 +106,19 @@
 
 </div>
 
+<!-- 小程序弹窗 -->
+<div class="gzh2">
+    <div class="gzh-con">
+        <div class="gzh-con-con">
+            <img class="gzh-con-img" src="phoneimg/1_100.jpg">
+        </div>
+
+
+        <div class="gzh-gb"><img src="phoneimg/1_76.png"></div>
+    </div>
+
+</div>
+
 
 <script>
     $(function () {
@@ -117,10 +130,23 @@
 
         $('.footera1').on('click', function () {
             $('.gzh').fadeIn()
-        })
+        });
+
+
         $('.gzh-gb').on('click', function () {
             $('.gzh').hide()
-        })
+        });
+
+        // 打开小程序码弹窗
+        $('#openApplets').on('click',function () {
+            $('.gzh2').fadeIn();
+        });
+
+
+        // 关闭小程序码弹窗
+        $('.gzh2 .gzh-gb').on('click', function () {
+            $('.gzh2').hide();
+        });
 
         var req = is_weixn();
         function is_weixn() {

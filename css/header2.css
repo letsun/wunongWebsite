@@ -1,0 +1,55 @@
+.header {
+  position: relative;
+  z-index: 10;
+}
+.header {
+  display: flex;
+}
+.header-nav-item:hover .child-list {
+  display: block;
+}
+.header-nav-item:last-child .nav-item-title {
+  display: block;
+  width: 100% !important;
+}
+.header .header-nav .header-nav-item .child-list {
+  position: absolute;
+  left: 0;
+  top: 98px;
+  z-index: 1;
+  width: 100%;
+  display: none;
+}
+.header .header-nav .header-nav-item .child-list .child-item {
+  display: block;
+  width: 100%;
+  padding: 14px 0;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  background: rgba(0, 0, 0, 0.6);
+}
+.header .header-nav .header-nav-item .child-list .child-item:last-child {
+  border-bottom: none;
+}
+.header .header-nav .header-nav-item .child-list .child-item:hover {
+  color: #FAA319;
+}
+.close-fudong {
+  position: fixed;
+  right: 10px;
+  bottom: 178px;
+  z-index: 1000;
+  width: 26px;
+  cursor: pointer;
+}
+.close-fudong2 {
+  position: fixed;
+  right: 10px;
+  bottom: 269px;
+  z-index: 1000;
+  width: 26px;
+  cursor: pointer;
+}

@@ -417,7 +417,8 @@ textarea {
   padding-left: 50px;
   padding-right: 20px;
 }
-.gzh {
+.gzh,
+.gzh2 {
   position: fixed;
   left: 0;
   right: 0;
@@ -427,23 +428,28 @@ textarea {
   display: none;
   background: rgba(0, 0, 0, 0.4);
 }
-.gzh .gzh-con {
+.gzh .gzh-con,
+.gzh2 .gzh-con {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
-.gzh .gzh-con .gzh-con-con {
+.gzh .gzh-con .gzh-con-con,
+.gzh2 .gzh-con .gzh-con-con {
   background: #fff;
   border: 10px solid #fe8908;
 }
-.gzh .gzh-con .gzh-con-img {
+.gzh .gzh-con .gzh-con-img,
+.gzh2 .gzh-con .gzh-con-img {
   height: 300px;
 }
-.gzh .gzh-con .gzh-gb {
+.gzh .gzh-con .gzh-gb,
+.gzh2 .gzh-con .gzh-gb {
   padding-top: 30px;
 }
-.gzh .gzh-con .gzh-gb img {
+.gzh .gzh-con .gzh-gb img,
+.gzh2 .gzh-con .gzh-gb img {
   margin: auto;
 }
 .footera1 {

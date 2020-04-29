@@ -117,6 +117,7 @@ textarea {
   float: left;
 }
 .header .header-nav .header-nav-item {
+  position: relative;
   width: 20%;
   text-align: center;
   font-weight: 400;
@@ -126,7 +127,7 @@ textarea {
   text-align: center;
   font-weight: 400;
 }
-.header .header-nav .header-nav-item:last-child a {
+.header .header-nav .header-nav-item:last-child .nav-item-title {
   font-size: 20px;
   color: #FAA319;
   border-bottom: #FAA319 4px solid;
@@ -513,4 +514,7 @@ textarea {
 .fudong img {
   height: 210px;
   width: 200px;
+}
+.header .header-nav .header-nav-item .child-list .child-item {
+  font-size: 14px!important;
 }

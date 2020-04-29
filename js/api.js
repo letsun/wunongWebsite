@@ -9,4 +9,5 @@ var api={
 
     newlist :ip1 + '/w/api/news/list',  //新闻列表
     newlistdetail: ip1+ '/w/api/news/' //新闻详情
-}
+};
+

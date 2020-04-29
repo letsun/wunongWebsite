@@ -101,7 +101,6 @@ textarea {
   width: 1200px;
   height: 160px;
   margin: auto;
-  overflow: hidden;
 }
 .header .header-logo {
   width: 20%;
@@ -120,6 +119,7 @@ textarea {
   float: left;
 }
 .header .header-nav .header-nav-item {
+  position: relative;
   width: 20%;
   text-align: center;
   font-weight: 400;
@@ -635,4 +635,7 @@ textarea {
 .fudong img {
   height: 210px;
   width: 200px;
+}
+.header .header-nav .header-nav-item .child-list {
+  top: 99px;
 }
